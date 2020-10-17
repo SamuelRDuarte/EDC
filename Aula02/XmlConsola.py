@@ -1,5 +1,6 @@
 from lxml import etree
-from pathlib import  Path
+from pathlib import Path
+
 
 def readXNL():
     file = Path(input("Nome do ficheiro XML: "))
@@ -13,6 +14,7 @@ def readXNL():
     else:
         print("Ficheiro errado")
 
+
 def validateXml():
     xml = Path(input("Nome do ficheiro XML: "))
     xsd = Path(input("Nome do ficheiro XSD: "))
@@ -24,22 +26,21 @@ def validateXml():
     else:
         print("Ficheiro errado")
 
-def printXML(elem,text = ''):
-    # elem_contents = elem_contents.replace("{}", "").replace("\n", "")
-    if len(elem.getchildren()) != 0:  # if they exist, print children
-        elem_contents = text + " " + str(elem.tag)
-        print(elem_contents)  # print element
-        for e in elem:
-            printXML(e, text + "\t")
-    else:
-        elem_contents = text + " " + str(elem.tag) + ": " + str(elem.text)
-        print(elem_contents)  # print element
 
+def printXML(elemento, info=''):
+    if len(elemento.getchildren()) != 0:
+        elem_info = info + " " + str(elemento.tag) + ":"
+        print(elem_info)
+        for e in elemento:
+            printXML(e, info + "\t")
+    else:
+        elem_info = info + " " + str(elemento.tag) + " - " + str(elemento.text)
+        print(elem_info)  # print element
 
 
 def main():
-    while(1):
-        print('*** MENU ***"')
+    while (1):
+        print('\n*** MENU ***"')
         print("1. Leitura Doc XML")
         print("2. Validar Doc XML")
         print("3. Mostrar Doc XML")
@@ -59,13 +60,13 @@ def main():
                 # print(nome.text)
                 root = info.getroot()
                 # print(etree.tostring(root, pretty_print=True).decode())
+                print("\n")
                 printXML(root)
             else:
                 print("Ficheiro errado")
         if escolha == 0:
             exit()
 
+
 if __name__ == '__main__':
     main()
-
-
