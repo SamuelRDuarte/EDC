@@ -1,5 +1,6 @@
 from lxml import etree
 from pathlib import Path
+import urllib
 
 
 def readXNL():
@@ -37,6 +38,14 @@ def printXML(elemento, info=''):
         elem_info = info + " " + str(elemento.tag) + " - " + str(elemento.text)
         print(elem_info)  # print element
 
+def readXmlURL():
+    url = "http://acesso.ua.pt/xml/curso.v5.asp?i=23"
+    response = urllib.request.urlopen(url).read()
+    tree = etree.fromstring(response)
+    print("\n")
+    printXML(tree)
+    print("\n")
+
 
 def main():
     while (1):
@@ -44,6 +53,7 @@ def main():
         print("1. Leitura Doc XML")
         print("2. Validar Doc XML")
         print("3. Mostrar Doc XML")
+        print("4. Mostrar xml a partir URL")
         print("0. Sair")
 
         escolha = int(input("Escolha:"))
@@ -64,6 +74,8 @@ def main():
                 printXML(root)
             else:
                 print("Ficheiro errado")
+        if escolha == 4:
+            readXmlURL();
         if escolha == 0:
             exit()
 
