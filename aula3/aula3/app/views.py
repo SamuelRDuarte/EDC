@@ -11,10 +11,9 @@ def home(request):
     info = dict()
     for c in cursos:
         info[c.find('guid').text] = c.find('nome').text
-    ti = "Nomes dos cursos da UA:"
     tparams={
         'cursos': info,
-        'frase': ti,
+        'frase': "Nomes dos cursos da UA:",
     }
     return render(request,"cursos.html",tparams)
 
@@ -48,7 +47,43 @@ def cursospordepart(request):
         info[c.find("guid").text] = c.find("nome").text
     tparans = {
         "cursos": info,
-        "titulo": "Lista dos cursos para o "+depart+":",
+        "frase": "Lista dos cursos para o "+depart+":",
+    }
+    return render(request,"cursos.html",tparans);
+
+def cursosporgrau(request):
+    grau = request.GET.get("grau")
+    cursos = xml.xpath("//curso[grau = '{}']".format(grau))
+    info = dict()
+    for c in cursos:
+        info[c.find("guid").text] = c.find("nome").text
+    tparans = {
+        "cursos": info,
+        "frase": "Lista dos cursos que tem "+grau+":",
+    }
+    return render(request,"cursos.html",tparans);
+
+def cursosporareacientifica(request):
+    area = request.GET.get("area")
+    cursos = xml.xpath("//curso[areascientificas//areacientifica = '{}']".format(area))
+    info = dict()
+    for c in cursos:
+        info[c.find("guid").text] = c.find("nome").text
+    tparans = {
+        "cursos": info,
+        "frase": "Lista dos cursos que faz parte da area "+area+":",
+    }
+    return render(request,"cursos.html",tparans);
+
+def cursosporlocal(request):
+    local = request.GET.get("local")
+    cursos = xml.xpath("//curso[local = '{}']".format(local))
+    info = dict()
+    for c in cursos:
+        info[c.find("guid").text] = c.find("nome").text
+    tparans = {
+        "cursos": info,
+        "frase": "Lista dos cursos que estão no "+local+":",
     }
     return render(request,"cursos.html",tparans);
 

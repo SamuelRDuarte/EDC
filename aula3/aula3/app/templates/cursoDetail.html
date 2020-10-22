@@ -18,9 +18,13 @@
             <li>{{ k }}:</li>
             <ul>
             {% for a in v %}
-                <li>{{ a }}</li>
+                <li><a href="{% url 'cursoAreaCientifica' %}?area={{ a }}" >{{ a }}</a></li>
             {% endfor %}
             </ul>
+        {% elif k == 'Grau' %}
+            <li>{{ k }} - <a href="{% url 'cursoGrau' %}?grau={{ v }}">{{ v }}</a></li>
+        {% elif k == 'Local' %}
+            <li>{{ k }} - <a href="{% url 'cursoLocal' %}?local={{ v }}">{{ v }}</a></li>
         {% else %}
             <li>{{ k }} - {{ v }}</li>
         {% endif %}

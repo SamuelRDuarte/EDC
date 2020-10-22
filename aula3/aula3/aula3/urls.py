@@ -23,4 +23,7 @@ urlpatterns = [
     path('', views.home, name='home'),
     path('curso/', views.curso, name='curso'),
     path('cursoDepart/', views.cursospordepart, name="cursoDepart"),
+    path('cursoGrau/', views.cursosporgrau, name="cursoGrau"),
+    path('cursoAreaCientifica/', views.cursosporareacientifica, name="cursoAreaCientifica"),
+    path('cursoLocal/', views.cursosporlocal, name="cursoLocal"),
 ]
