@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> {{nome}}</title>
+</head>
+<body>
+<ol>
+    {% for k,v in curso.items %}
+        {% if k == 'Departamentos' %}
+            <li>{{ k }}:</li>
+            <ul>
+            {% for d in v %}
+                <li><a href="{% url 'cursoDepart' %}?depart={{ d }}" >{{ d }}</a></li>
+            {% endfor %}
+            </ul>
+        {% elif k == 'Areascientificas' %}
+            <li>{{ k }}:</li>
+            <ul>
+            {% for a in v %}
+                <li>{{ a }}</li>
+            {% endfor %}
+            </ul>
+        {% else %}
+            <li>{{ k }} - {{ v }}</li>
+        {% endif %}
+    {% endfor %}
+</ol>
+</body>
+</html>
