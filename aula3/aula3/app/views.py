@@ -59,8 +59,12 @@ def cursodetails(request):
     response = urllib.request.urlopen(url + guid).read()
     root = etree.fromstring(response)
     nome = root.find('nome').text
+
+    xslt_file = etree.parse('app/cursos.xsl')
+    transform = etree.XSLT(xslt_file)
+    html = transform(root)
     tparams = {
-        'teste': etree.tostring(root, pretty_print=True),
+        'teste': html,
         'titulo': nome,
     }
     return render(request, "cursoFullDetail.html", tparams)
