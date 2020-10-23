@@ -26,4 +26,8 @@ urlpatterns = [
     path('cursoGrau/', views.cursosporgrau, name="cursoGrau"),
     path('cursoAreaCientifica/', views.cursosporareacientifica, name="cursoAreaCientifica"),
     path('cursoLocal/', views.cursosporlocal, name="cursoLocal"),
+    path('departamentos/', views.departamentos, name="departamentos"),
+    path('areascientificas/', views.areascientificas, name="areascientificas"),
+    path('locais/', views.locais, name="locais"),
+    path('cursoDetails/', views.cursodetails, name='cursoDetails'),
 ]

@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Departamentos</title>
+</head>
+<body>
+<h2>Departamentos que existem na UA:</h2>
+<ul>
+    {% for d in departamentos %}
+        <li><a href="{% url 'cursoDepart' %}?depart={{ d }}" >{{ d }}</a></li>
+    {% endfor %}
+</ul>
+</body>
+</html>

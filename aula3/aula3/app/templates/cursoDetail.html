@@ -2,20 +2,20 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title> {{nome}}</title>
+    <title> {{curso.Nome}}</title>
 </head>
 <body>
 <ol>
     {% for k,v in curso.items %}
         {% if k == 'Departamentos' %}
-            <li>{{ k }}:</li>
+            <li><a href="{% url "departamentos" %}">{{ k }}:</a></li>
             <ul>
             {% for d in v %}
                 <li><a href="{% url 'cursoDepart' %}?depart={{ d }}" >{{ d }}</a></li>
             {% endfor %}
             </ul>
         {% elif k == 'Areascientificas' %}
-            <li>{{ k }}:</li>
+            <li><a href="{% url "areascientificas" %}">{{ k }}:</a></li>
             <ul>
             {% for a in v %}
                 <li><a href="{% url 'cursoAreaCientifica' %}?area={{ a }}" >{{ a }}</a></li>
@@ -24,7 +24,9 @@
         {% elif k == 'Grau' %}
             <li>{{ k }} - <a href="{% url 'cursoGrau' %}?grau={{ v }}">{{ v }}</a></li>
         {% elif k == 'Local' %}
-            <li>{{ k }} - <a href="{% url 'cursoLocal' %}?local={{ v }}">{{ v }}</a></li>
+            <li><a href="{% url "locais" %}">{{ k }}</a> - <a href="{% url 'cursoLocal' %}?local={{ v }}">{{ v }}</a></li>
+        {% elif k == 'Nome' %}
+            <li><a href="{% url 'cursoDetails' %}?guid={{ guid }}"> {{ v }}</a></li>
         {% else %}
             <li>{{ k }} - {{ v }}</li>
         {% endif %}
