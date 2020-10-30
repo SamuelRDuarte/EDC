@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cursos</title>
+</head>
+<body>
+<h2>{{ frase }}</h2>
+<ul>
+    {% for g,n in cursos.items %}
+        <li><a href="{% url 'curso' %}?guid={{ g }}"> {{ n }}</a></li>
+    {% endfor %}
+</ul>
+</body>
+</html>

@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Areas Cientificas</title>
+</head>
+<body>
+<h2>Areas Cientificas que existem na UA:</h2>
+<ul>
+    {% for d in areas %}
+        <li><a href="{% url 'cursoAreaCientifica' %}?area={{ d }}" >{{ d }}</a></li>
+    {% endfor %}
+</ul>
+</body>
+</html>

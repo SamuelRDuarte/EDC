@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Locais</title>
+</head>
+<body>
+<h2>Locais que existem na UA:</h2>
+<ul>
+    {% for d in locais %}
+        <li><a href="{% url 'cursoLocal' %}?local={{ d }}" >{{ d }}</a></li>
+    {% endfor %}
+</ul>
+</body>
+</html>

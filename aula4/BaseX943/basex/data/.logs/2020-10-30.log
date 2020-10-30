@@ -1,0 +1,297 @@
+15:23:01.060	SERVER	admin	OK	Server was started (port: 1984).
+15:23:17.197	127.0.0.1:39116	admin	REQUEST	<root>{ for $a in collection("CursosUA")//curso return <elem> {$a/guid} {$a/nome} </elem>}</root>	1359.61 ms
+15:23:17.199	127.0.0.1:39116	admin	ERROR	Unknown command: <root/>.	1.17 ms
+15:23:17.439	127.0.0.1:39116	admin	REQUEST	<root>{ for $a in collection("CursosUA")//curso return <elem> {$a/guid} {$a/nome} </elem>}</root>	9.57 ms
+15:23:17.439	127.0.0.1:39116	admin	ERROR	Unknown command: <root/>.	0.38 ms
+15:24:24.529	127.0.0.1:39124	admin	REQUEST	for $a in collection("CursosUA")//curso return <elem> {$a/guid} {$a/nome} </elem>	6.57 ms
+15:24:24.530	127.0.0.1:39124	admin	ERROR	Stopped at , 1/4: Unknown command: for. Try 'help'.	0.22 ms
+15:26:30.938	127.0.0.1:39130	admin	REQUEST	XQUERY 1 to 10	2.9 ms
+15:26:30.944	127.0.0.1:39130	admin	OK	Query executed in 5.01 ms.	5.89 ms
+15:28:06.351	127.0.0.1:39146	admin	OK	QUERY[0] for $i in 1 to 10 return <xml>Text { $i }</xml>	5.71 ms
+15:28:06.392	127.0.0.1:39146	admin	OK	RESULTS[0]	39.73 ms
+15:28:06.392	127.0.0.1:39146	admin	OK	CLOSE[0]	0.19 ms
+15:30:01.020	127.0.0.1:39156	admin	REQUEST	xquery	0.38 ms
+15:30:01.020	127.0.0.1:39156	admin	ERROR	Stopped at , 1/7: Syntax: XQUERY [query] Run XQuery. Runs the specified query and prints the result.	0.11 ms
+15:30:01.024	127.0.0.1:39158	admin	REQUEST	xquery	0.34 ms
+15:30:01.025	127.0.0.1:39158	admin	ERROR	Stopped at , 1/7: Syntax: XQUERY [query] Run XQuery. Runs the specified query and prints the result.	0.19 ms
+15:35:18.198	127.0.0.1:39214	admin	REQUEST	for $a in collection("CursosUA")//curso return <elem> {$a/guid} {$a/nome} </elem>	1.71 ms
+15:35:18.199	127.0.0.1:39214	admin	ERROR	Stopped at , 1/4: Unknown command: for. Try 'help'.	0.45 ms
+15:36:44.732	127.0.0.1:39224	admin	REQUEST	CREATE DB CursosUA	1.39 ms
+15:36:44.748	127.0.0.1:39224	admin	OK	Database 'CursosUA' created in 14.7 ms.	16.64 ms
+15:37:29.665	127.0.0.1:39228	admin	REQUEST	CREATE DB CursosUA	0.33 ms
+15:37:29.668	127.0.0.1:39228	admin	OK	Database 'CursosUA' created in 2.88 ms.	3.42 ms
+15:37:29.669	127.0.0.1:39228	admin	REQUEST	ADD TO app/cursos.xml [...]	0.62 ms
+15:37:29.676	127.0.0.1:39228	admin	OK	Resource(s) added in 6.27 ms.	7.22 ms
+15:37:38.139	127.0.0.1:39230	admin	REQUEST	CREATE DB CursosUA	0.37 ms
+15:37:38.143	127.0.0.1:39230	admin	OK	Database 'CursosUA' created in 3.85 ms.	4.4 ms
+15:37:38.144	127.0.0.1:39230	admin	REQUEST	ADD TO app/cursos.xml [...]	0.11 ms
+15:37:38.352	127.0.0.1:39230	admin	OK	Resource(s) added in 2.08 ms.	209.08 ms
+15:37:42.392	127.0.0.1:39230	admin	REQUEST	for $a in collection("CursosUA")//curso return <elem> {$a/guid} {$a/nome} </elem>	1.57 ms
+15:37:42.392	127.0.0.1:39230	admin	ERROR	Stopped at , 1/4: Unknown command: for. Try 'help'.	0.38 ms
+15:38:42.593	127.0.0.1:39236	admin	REQUEST	CREATE DB CursosUA	0.41 ms
+15:38:42.596	127.0.0.1:39236	admin	OK	Database 'CursosUA' created in 2.58 ms.	3.11 ms
+15:38:42.596	127.0.0.1:39236	admin	REQUEST	ADD TO app/cursos.xml [...]	0.1 ms
+15:38:42.599	127.0.0.1:39236	admin	OK	Resource(s) added in 2.02 ms.	2.6 ms
+15:38:42.599	127.0.0.1:39236	admin	REQUEST	XQUERY collection('CursoUA')	0.24 ms
+15:38:42.688	127.0.0.1:39236	admin	ERROR	Stopped at ., 1/11: [FODC0002] Resource '/home/samuel/BaseX943/basex/bin/CursoUA' does not exist.	89.31 ms
+15:38:42.697	127.0.0.1:39238	admin	REQUEST	CREATE DB CursosUA	0.45 ms
+15:38:42.701	127.0.0.1:39238	admin	OK	Database 'CursosUA' created in 3.37 ms.	4.07 ms
+15:38:42.704	127.0.0.1:39238	admin	REQUEST	ADD TO app/cursos.xml [...]	0.2 ms
+15:38:42.708	127.0.0.1:39238	admin	OK	Resource(s) added in 3.43 ms.	4.12 ms
+15:38:42.709	127.0.0.1:39238	admin	REQUEST	XQUERY collection('CursoUA')	0.3 ms
+15:38:42.710	127.0.0.1:39238	admin	ERROR	Stopped at ., 1/11: [FODC0002] Resource '/home/samuel/BaseX943/basex/bin/CursoUA' does not exist.	0.97 ms
+15:39:40.903	127.0.0.1:39240	admin	REQUEST	CREATE DB CursosUA	0.37 ms
+15:39:40.907	127.0.0.1:39240	admin	OK	Database 'CursosUA' created in 3.34 ms.	3.97 ms
+15:39:40.907	127.0.0.1:39240	admin	REQUEST	ADD TO app/cursos.xml [...]	0.09 ms
+15:39:40.910	127.0.0.1:39240	admin	OK	Resource(s) added in 2.59 ms.	3.32 ms
+15:39:40.911	127.0.0.1:39240	admin	REQUEST	XQUERY collection('CursoUA')	0.24 ms
+15:39:40.912	127.0.0.1:39240	admin	ERROR	Stopped at ., 1/11: [FODC0002] Resource '/home/samuel/BaseX943/basex/bin/CursoUA' does not exist.	0.78 ms
+15:39:40.916	127.0.0.1:39242	admin	REQUEST	CREATE DB CursosUA	0.37 ms
+15:39:40.925	127.0.0.1:39242	admin	OK	Database 'CursosUA' created in 8.96 ms.	9.63 ms
+15:39:40.926	127.0.0.1:39242	admin	REQUEST	ADD TO app/cursos.xml [...]	0.11 ms
+15:39:40.932	127.0.0.1:39242	admin	OK	Resource(s) added in 5.45 ms.	6.24 ms
+15:39:40.933	127.0.0.1:39242	admin	REQUEST	XQUERY collection('CursoUA')	0.32 ms
+15:39:40.934	127.0.0.1:39242	admin	ERROR	Stopped at ., 1/11: [FODC0002] Resource '/home/samuel/BaseX943/basex/bin/CursoUA' does not exist.	0.83 ms
+15:41:14.429	127.0.0.1:39246	admin	REQUEST	CREATE DB database	0.36 ms
+15:41:14.431	127.0.0.1:39246	admin	OK	Database 'database' created in 2.03 ms.	2.6 ms
+15:41:14.432	127.0.0.1:39246	admin	REQUEST	ADD TO app/cursos.xml [...]	0.11 ms
+15:41:14.435	127.0.0.1:39246	admin	OK	Resource(s) added in 2.58 ms.	3.39 ms
+15:41:14.436	127.0.0.1:39246	admin	REQUEST	XQUERY collection('database')	0.31 ms
+15:41:14.437	127.0.0.1:39246	admin	OK	Query executed in 0.61 ms.	1.08 ms
+15:42:16.463	127.0.0.1:39254	admin	REQUEST	CREATE DB database	0.39 ms
+15:42:16.466	127.0.0.1:39254	admin	OK	Database 'database' created in 2.54 ms.	3.1 ms
+15:42:16.466	127.0.0.1:39254	admin	REQUEST	ADD TO app/cursos.xml [...]	0.11 ms
+15:42:16.469	127.0.0.1:39254	admin	OK	Resource(s) added in 2.47 ms.	3.11 ms
+15:42:16.470	127.0.0.1:39254	admin	REQUEST	XQUERY collection('database')	0.22 ms
+15:42:16.471	127.0.0.1:39254	admin	OK	Query executed in 0.49 ms.	0.95 ms
+15:42:29.972	127.0.0.1:39256	admin	REQUEST	CREATE DB database	0.35 ms
+15:42:29.975	127.0.0.1:39256	admin	OK	Database 'database' created in 2.57 ms.	3.18 ms
+15:42:29.976	127.0.0.1:39256	admin	REQUEST	ADD TO app/cursos.xml [...]	0.12 ms
+15:42:29.979	127.0.0.1:39256	admin	OK	Resource(s) added in 2.45 ms.	3.15 ms
+15:42:29.980	127.0.0.1:39256	admin	REQUEST	XQUERY collection('database')	0.28 ms
+15:42:29.980	127.0.0.1:39256	admin	OK	Query executed in 0.49 ms.	0.88 ms
+15:42:33.538	127.0.0.1:39256	admin	REQUEST	for $a in collection('database')//curso return <elem> {$a/guid} {$a/nome} </elem>	1.41 ms
+15:42:33.538	127.0.0.1:39256	admin	ERROR	Stopped at , 1/4: Unknown command: for. Try 'help'.	0.32 ms
+15:44:00.133	127.0.0.1:39264	admin	REQUEST	CREATE DB database	0.39 ms
+15:44:00.136	127.0.0.1:39264	admin	OK	Database 'database' created in 3.05 ms.	3.65 ms
+15:44:00.137	127.0.0.1:39264	admin	REQUEST	ADD TO app/cursos.xml [...]	0.1 ms
+15:44:00.139	127.0.0.1:39264	admin	OK	Resource(s) added in 2.04 ms.	2.82 ms
+15:44:00.140	127.0.0.1:39264	admin	REQUEST	XQUERY collection('database')	0.31 ms
+15:44:00.141	127.0.0.1:39264	admin	OK	Query executed in 0.48 ms.	0.81 ms
+15:44:04.366	127.0.0.1:39264	admin	REQUEST	XQUERY for $a in collection('database')//curso return <elem> {$a/guid} {$a/nome} </elem>	0.54 ms
+15:44:04.379	127.0.0.1:39264	admin	OK	Query executed in 11.93 ms.	12.48 ms
+15:44:42.958	127.0.0.1:39270	admin	REQUEST	CREATE DB database	0.41 ms
+15:44:42.960	127.0.0.1:39270	admin	OK	Database 'database' created in 2.01 ms.	2.55 ms
+15:44:42.961	127.0.0.1:39270	admin	REQUEST	ADD TO app/cursos.xml [...]	0.12 ms
+15:44:42.963	127.0.0.1:39270	admin	OK	Resource(s) added in 2.28 ms.	2.99 ms
+15:44:42.964	127.0.0.1:39270	admin	REQUEST	XQUERY collection('database')	1.03 ms
+15:44:42.966	127.0.0.1:39270	admin	OK	Query executed in 0.42 ms.	0.78 ms
+15:44:44.917	127.0.0.1:39270	admin	REQUEST	XQUERY for $a in collection('CursosUA')//curso return <elem> {$a/guid} {$a/nome} </elem>	0.47 ms
+15:44:44.920	127.0.0.1:39270	admin	OK	Query executed in 2.45 ms.	3.05 ms
+15:45:09.682	127.0.0.1:39276	admin	REQUEST	CREATE DB database	0.32 ms
+15:45:09.685	127.0.0.1:39276	admin	OK	Database 'database' created in 2.17 ms.	2.67 ms
+15:45:09.685	127.0.0.1:39276	admin	REQUEST	ADD TO app/cursos.xml [...]	0.1 ms
+15:45:09.748	127.0.0.1:39276	admin	OK	Resource(s) added in 2.15 ms.	63.05 ms
+15:45:09.749	127.0.0.1:39276	admin	REQUEST	XQUERY collection('database')	0.21 ms
+15:45:09.749	127.0.0.1:39276	admin	OK	Query executed in 0.45 ms.	0.81 ms
+15:45:11.550	127.0.0.1:39276	admin	REQUEST	XQUERY <root>{for $a in collection('CursosUA')//curso return <elem> {$a/guid} {$a/nome} </elem>}</root>	0.6 ms
+15:45:11.553	127.0.0.1:39276	admin	OK	Query executed in 3.13 ms.	3.87 ms
+15:46:33.449	127.0.0.1:39282	admin	REQUEST	CREATE DB database	0.32 ms
+15:46:33.451	127.0.0.1:39282	admin	OK	Database 'database' created in 1.68 ms.	2.1 ms
+15:46:33.451	127.0.0.1:39282	admin	REQUEST	ADD TO app/cursos.xml [...]	0.06 ms
+15:46:33.454	127.0.0.1:39282	admin	OK	Resource(s) added in 2.09 ms.	2.73 ms
+15:46:33.455	127.0.0.1:39282	admin	REQUEST	XQUERY collection('database')	0.28 ms
+15:46:33.456	127.0.0.1:39282	admin	OK	Query executed in 0.47 ms.	0.82 ms
+15:46:36.510	127.0.0.1:39282	admin	REQUEST	XQUERY <root>{for $a in collection('CursosUA')//curso return <elem> {$a/guid} {$a/nome} </elem>}</root>	0.64 ms
+15:46:36.515	127.0.0.1:39282	admin	OK	Query executed in 4.3 ms.	5.2 ms
+15:47:09.246	127.0.0.1:39290	admin	REQUEST	CREATE DB database	0.3 ms
+15:47:09.249	127.0.0.1:39290	admin	OK	Database 'database' created in 1.85 ms.	2.25 ms
+15:47:09.249	127.0.0.1:39290	admin	REQUEST	ADD TO app/cursos.xml [...]	0.06 ms
+15:47:09.649	127.0.0.1:39290	admin	OK	Resource(s) added in 1.92 ms.	400.43 ms
+15:47:09.650	127.0.0.1:39290	admin	REQUEST	XQUERY collection('database')	0.35 ms
+15:47:09.651	127.0.0.1:39290	admin	OK	Query executed in 0.62 ms.	1.07 ms
+15:47:46.470	127.0.0.1:39292	admin	REQUEST	CREATE DB CursosUA	0.36 ms
+15:47:46.473	127.0.0.1:39292	admin	OK	Database 'CursosUA' created in 2.07 ms.	2.52 ms
+15:47:46.473	127.0.0.1:39292	admin	REQUEST	ADD TO app/cursos.xml [...]	0.05 ms
+15:47:46.477	127.0.0.1:39292	admin	OK	Resource(s) added in 1.72 ms.	3.47 ms
+15:47:46.477	127.0.0.1:39292	admin	REQUEST	XQUERY collection('CursosUA')	0.3 ms
+15:47:46.478	127.0.0.1:39292	admin	OK	Query executed in 0.46 ms.	0.85 ms
+15:47:50.123	127.0.0.1:39292	admin	REQUEST	XQUERY <root>{for $a in collection('CursosUA')//curso return <elem> {$a/guid} {$a/nome} </elem>}</root>	0.42 ms
+15:47:50.125	127.0.0.1:39292	admin	OK	Query executed in 1.29 ms.	1.71 ms
+15:49:13.797	127.0.0.1:39298	admin	REQUEST	CREATE DB CursosUA	0.28 ms
+15:49:13.798	127.0.0.1:39298	admin	ERROR	Database 'CursosUA' is currently opened by another process.	0.35 ms
+15:50:02.399	127.0.0.1:39300	admin	REQUEST	CREATE DB CursosUA	0.32 ms
+15:50:02.401	127.0.0.1:39300	admin	OK	Database 'CursosUA' created in 1.88 ms.	2.32 ms
+15:50:02.402	127.0.0.1:39300	admin	REQUEST	ADD TO app/cursos.xml [...]	0.13 ms
+15:50:02.405	127.0.0.1:39300	admin	OK	Resource(s) added in 2.25 ms.	2.85 ms
+15:50:02.407	127.0.0.1:39300	admin	REQUEST	XQUERY collection('CursosUA')	0.35 ms
+15:50:02.411	127.0.0.1:39300	admin	OK	Query executed in 4.26 ms.	4.69 ms
+15:50:14.010	127.0.0.1:39302	admin	REQUEST	CREATE DB CursosUA	0.31 ms
+15:50:14.013	127.0.0.1:39302	admin	OK	Database 'CursosUA' created in 2.57 ms.	3.1 ms
+15:50:14.014	127.0.0.1:39302	admin	REQUEST	ADD TO app/cursos.xml [...]	0.11 ms
+15:50:14.016	127.0.0.1:39302	admin	OK	Resource(s) added in 1.42 ms.	2.05 ms
+15:50:14.016	127.0.0.1:39302	admin	REQUEST	XQUERY collection('CursosUA')	0.17 ms
+15:50:14.017	127.0.0.1:39302	admin	OK	Query executed in 0.48 ms.	0.79 ms
+15:50:16.561	127.0.0.1:39302	admin	REQUEST	XQUERY <root>{for $a in collection('CursosUA')//curso return <elem> {$a/guid} {$a/nome} </elem>}</root>	0.65 ms
+15:50:16.565	127.0.0.1:39302	admin	OK	Query executed in 2.58 ms.	3.36 ms
+15:50:40.880	127.0.0.1:39308	admin	REQUEST	CREATE DB CursosUA	0.31 ms
+15:50:40.883	127.0.0.1:39308	admin	OK	Database 'CursosUA' created in 2.4 ms.	2.91 ms
+15:50:40.883	127.0.0.1:39308	admin	REQUEST	ADD TO app/cursos.xml [...]	0.09 ms
+15:50:40.886	127.0.0.1:39308	admin	OK	Resource(s) added in 1.96 ms.	2.54 ms
+15:50:40.886	127.0.0.1:39308	admin	REQUEST	XQUERY collection('CursosUA')	0.29 ms
+15:50:40.887	127.0.0.1:39308	admin	OK	Query executed in 0.32 ms.	0.58 ms
+15:50:42.902	127.0.0.1:39308	admin	REQUEST	XQUERY for $a in collection('CursosUA')//curso return <elem> {$a/guid} {$a/nome} </elem>	0.93 ms
+15:50:42.906	127.0.0.1:39308	admin	OK	Query executed in 3.01 ms.	3.93 ms
+15:51:22.838	127.0.0.1:39314	admin	REQUEST	CREATE DB CursosUA	0.3 ms
+15:51:22.841	127.0.0.1:39314	admin	OK	Database 'CursosUA' created in 2.04 ms.	2.66 ms
+15:51:22.841	127.0.0.1:39314	admin	REQUEST	ADD TO app/cursos.xml [...]	0.05 ms
+15:51:22.859	127.0.0.1:39314	admin	OK	Resource(s) added in 1.37 ms.	18.54 ms
+15:51:22.860	127.0.0.1:39314	admin	REQUEST	XQUERY collection('CursosUA')	0.28 ms
+15:51:22.861	127.0.0.1:39314	admin	OK	Query executed in 0.53 ms.	0.87 ms
+15:51:36.445	127.0.0.1:39316	admin	REQUEST	CREATE DB CursosUA	0.46 ms
+15:51:36.450	127.0.0.1:39316	admin	OK	Database 'CursosUA' created in 3.63 ms.	4.55 ms
+15:51:36.450	127.0.0.1:39316	admin	REQUEST	ADD TO app/cursos.xml [...]	0.2 ms
+15:51:36.453	127.0.0.1:39316	admin	OK	Resource(s) added in 2.15 ms.	3.29 ms
+15:51:36.454	127.0.0.1:39316	admin	REQUEST	XQUERY collection('CursosUA')	0.52 ms
+15:51:36.456	127.0.0.1:39316	admin	OK	Query executed in 0.92 ms.	1.44 ms
+15:51:49.092	127.0.0.1:39318	admin	REQUEST	CREATE DB CursosUA	0.25 ms
+15:51:49.094	127.0.0.1:39318	admin	OK	Database 'CursosUA' created in 1.73 ms.	2.23 ms
+15:51:49.095	127.0.0.1:39318	admin	REQUEST	ADD TO app/cursos.xml [...]	0.11 ms
+15:51:49.097	127.0.0.1:39318	admin	OK	Resource(s) added in 1.55 ms.	2.09 ms
+15:51:49.097	127.0.0.1:39318	admin	REQUEST	XQUERY collection('CursosUA')	0.18 ms
+15:51:49.098	127.0.0.1:39318	admin	OK	Query executed in 0.76 ms.	1.0 ms
+15:51:53.132	127.0.0.1:39318	admin	REQUEST	XQUERY for $a in collection('CursosUA')//curso return <elem> {$a/guid} {$a/nome} </elem>	0.66 ms
+15:51:53.163	127.0.0.1:39318	admin	OK	Query executed in 24.69 ms.	31.58 ms
+15:52:22.902	127.0.0.1:39326	admin	REQUEST	CREATE DB CursosUA	0.26 ms
+15:52:22.904	127.0.0.1:39326	admin	OK	Database 'CursosUA' created in 1.68 ms.	2.03 ms
+15:52:22.905	127.0.0.1:39326	admin	REQUEST	ADD TO app/cursos.xml [...]	0.05 ms
+15:52:22.906	127.0.0.1:39326	admin	OK	Resource(s) added in 1.24 ms.	1.64 ms
+15:52:22.907	127.0.0.1:39326	admin	REQUEST	XQUERY collection('CursosUA')	0.17 ms
+15:52:22.907	127.0.0.1:39326	admin	OK	Query executed in 0.39 ms.	0.68 ms
+15:52:24.773	127.0.0.1:39326	admin	OK	QUERY[0] for $i in 1 to 10 return <xml>Text { $i }</xml>	0.29 ms
+15:52:24.783	127.0.0.1:39326	admin	OK	RESULTS[0]	4.18 ms
+15:52:56.843	127.0.0.1:39332	admin	REQUEST	CREATE DB CursosUA	0.23 ms
+15:52:56.845	127.0.0.1:39332	admin	OK	Database 'CursosUA' created in 1.45 ms.	1.78 ms
+15:52:56.845	127.0.0.1:39332	admin	REQUEST	ADD TO app/cursos.xml [...]	0.04 ms
+15:52:56.847	127.0.0.1:39332	admin	OK	Resource(s) added in 1.54 ms.	2.0 ms
+15:52:56.848	127.0.0.1:39332	admin	REQUEST	XQUERY collection('CursosUA')	0.23 ms
+15:52:56.848	127.0.0.1:39332	admin	OK	Query executed in 0.45 ms.	0.74 ms
+15:52:59.231	127.0.0.1:39332	admin	REQUEST	XQUERY for $a in collection('CursosUA')//curso return <elem> {$a/guid} {$a/nome} </elem>	0.45 ms
+15:52:59.233	127.0.0.1:39332	admin	OK	Query executed in 1.8 ms.	2.28 ms
+15:53:10.531	127.0.0.1:39338	admin	REQUEST	CREATE DB CursosUA	0.38 ms
+15:53:10.533	127.0.0.1:39338	admin	OK	Database 'CursosUA' created in 2.24 ms.	2.73 ms
+15:53:10.534	127.0.0.1:39338	admin	REQUEST	ADD TO app/cursos.xml [...]	0.05 ms
+15:53:10.537	127.0.0.1:39338	admin	OK	Resource(s) added in 2.48 ms.	3.54 ms
+15:53:10.538	127.0.0.1:39338	admin	REQUEST	XQUERY collection('CursosUA')	0.24 ms
+15:53:10.539	127.0.0.1:39338	admin	OK	Query executed in 0.43 ms.	0.74 ms
+15:53:13.349	127.0.0.1:39338	admin	REQUEST	for $a in collection('CursosUA')//curso return <elem> {$a/guid} {$a/nome} </elem>	0.45 ms
+15:53:13.349	127.0.0.1:39338	admin	ERROR	Stopped at , 1/4: Unknown command: for. Try 'help'.	0.12 ms
+15:53:37.311	127.0.0.1:39344	admin	REQUEST	CREATE DB CursosUA	0.21 ms
+15:53:37.313	127.0.0.1:39344	admin	OK	Database 'CursosUA' created in 1.65 ms.	2.05 ms
+15:53:37.313	127.0.0.1:39344	admin	REQUEST	ADD TO app/cursos.xml [...]	0.06 ms
+15:53:37.315	127.0.0.1:39344	admin	OK	Resource(s) added in 1.61 ms.	2.24 ms
+15:53:37.316	127.0.0.1:39344	admin	REQUEST	XQUERY collection('CursosUA')	0.23 ms
+15:53:37.317	127.0.0.1:39344	admin	OK	Query executed in 0.49 ms.	0.8 ms
+15:54:36.240	127.0.0.1:39374	admin	REQUEST	CREATE DB CursosUA	0.32 ms
+15:54:36.243	127.0.0.1:39374	admin	OK	Database 'CursosUA' created in 2.27 ms.	2.67 ms
+15:54:36.243	127.0.0.1:39374	admin	REQUEST	ADD TO app/cursos.xml [...]	0.06 ms
+15:54:36.245	127.0.0.1:39374	admin	OK	Resource(s) added in 1.88 ms.	2.43 ms
+15:54:36.246	127.0.0.1:39374	admin	REQUEST	XQUERY collection('CursosUA')	0.22 ms
+15:54:36.246	127.0.0.1:39374	admin	OK	Query executed in 0.45 ms.	0.72 ms
+15:54:41.660	127.0.0.1:39374	admin	REQUEST	XQUERY for $a in collection('database')//curso return <elem> {$a/guid} {$a/nome} </elem>	0.5 ms
+15:54:41.664	127.0.0.1:39374	admin	OK	Query executed in 2.79 ms.	3.39 ms
+15:54:55.844	127.0.0.1:39380	admin	REQUEST	CREATE DB CursosUA	0.35 ms
+15:54:55.846	127.0.0.1:39380	admin	OK	Database 'CursosUA' created in 1.71 ms.	2.06 ms
+15:54:55.846	127.0.0.1:39380	admin	REQUEST	ADD TO app/cursos.xml [...]	0.05 ms
+15:54:55.848	127.0.0.1:39380	admin	OK	Resource(s) added in 1.72 ms.	2.09 ms
+15:54:55.849	127.0.0.1:39380	admin	REQUEST	XQUERY collection('CursosUA')	0.15 ms
+15:54:55.849	127.0.0.1:39380	admin	OK	Query executed in 0.34 ms.	0.52 ms
+15:54:58.506	127.0.0.1:39380	admin	REQUEST	XQUERY for $a in collection('database')	0.51 ms
+15:54:58.507	127.0.0.1:39380	admin	ERROR	Stopped at ., 1/33: [XPST0003] Incomplete FLWOR expression: expecting 'return'.	0.76 ms
+15:55:33.641	127.0.0.1:39386	admin	REQUEST	CREATE DB CursosUA	0.27 ms
+15:55:33.643	127.0.0.1:39386	admin	OK	Database 'CursosUA' created in 1.65 ms.	2.03 ms
+15:55:33.644	127.0.0.1:39386	admin	REQUEST	ADD TO app/cursos.xml [...]	0.08 ms
+15:55:33.646	127.0.0.1:39386	admin	OK	Resource(s) added in 1.86 ms.	2.39 ms
+15:55:33.646	127.0.0.1:39386	admin	REQUEST	XQUERY collection('CursosUA')	0.21 ms
+15:55:33.647	127.0.0.1:39386	admin	OK	Query executed in 0.32 ms.	0.54 ms
+15:55:37.051	127.0.0.1:39386	admin	REQUEST	XQUERY for $a in collection('database') return <elem> {$a} </elem>	0.76 ms
+15:55:37.057	127.0.0.1:39386	admin	OK	Query executed in 5.7 ms.	6.36 ms
+15:56:04.399	127.0.0.1:39392	admin	REQUEST	CREATE DB CursosUA	0.52 ms
+15:56:04.525	127.0.0.1:39392	admin	OK	Database 'CursosUA' created in 3.56 ms.	126.27 ms
+15:56:04.526	127.0.0.1:39392	admin	REQUEST	ADD TO app/cursos.xml [...]	0.17 ms
+15:56:04.541	127.0.0.1:39392	admin	OK	Resource(s) added in 3.59 ms.	15.58 ms
+15:56:04.542	127.0.0.1:39392	admin	REQUEST	XQUERY collection('CursosUA')	0.46 ms
+15:56:04.544	127.0.0.1:39392	admin	OK	Query executed in 0.99 ms.	1.59 ms
+15:56:09.761	127.0.0.1:39392	admin	REQUEST	XQUERY for $a in collection('CursosUA') return <elem> {$a} </elem>	0.3 ms
+15:56:09.762	127.0.0.1:39392	admin	OK	Query executed in 0.71 ms.	1.01 ms
+15:57:06.072	127.0.0.1:39400	admin	REQUEST	XQUERY for $a in collection('CursosUA') return <elem> {$a} </elem>	0.4 ms
+15:57:06.074	127.0.0.1:39400	admin	OK	Query executed in 1.73 ms.	2.19 ms
+15:57:24.210	SERVER	admin	OK	Server was stopped (port: 1984).
+15:57:27.737	SERVER	admin	OK	Server was started (port: 1984).
+15:57:35.845	127.0.0.1:39406	admin	REQUEST	XQUERY for $a in collection('CursosUA') return <elem> {$a} </elem>	21.99 ms
+15:57:36.383	127.0.0.1:39406	admin	OK	Query executed in 527.24 ms.	537.89 ms
+15:58:39.831	127.0.0.1:39412	admin	REQUEST	XQUERY for $a in doc('CursosUA') return <elem> {$a} </elem>	1.51 ms
+15:58:39.839	127.0.0.1:39412	admin	OK	Query executed in 6.46 ms.	7.53 ms
+15:59:00.426	127.0.0.1:39418	admin	REQUEST	for $a in doc('CursosUA') return <elem> {$a} </elem>	3.4 ms
+15:59:00.427	127.0.0.1:39418	admin	ERROR	Stopped at , 1/4: Unknown command: for. Try 'help'.	0.22 ms
+16:03:37.459	127.0.0.1:39496	admin	REQUEST	LIST	1.46 ms
+16:03:37.466	127.0.0.1:39496	admin	OK		6.82 ms
+16:03:37.467	127.0.0.1:39496	admin	REQUEST	OPEN CursosUA	0.61 ms
+16:03:37.469	127.0.0.1:39496	admin	OK	Database 'CursosUA' was opened in 1.41 ms.	1.86 ms
+16:03:37.470	127.0.0.1:39496	admin	REQUEST	INFO DB	1.22 ms
+16:03:37.484	127.0.0.1:39496	admin	OK		13.91 ms
+16:04:52.563	127.0.0.1:39506	admin	REQUEST	XQUERY for $a in collection('cursos')//curso return <elem> {$a/guid} {$a/nome} </elem>	0.77 ms
+16:04:52.614	127.0.0.1:39506	admin	OK	Query executed in 50.45 ms.	51.14 ms
+16:05:19.220	127.0.0.1:39512	admin	REQUEST	for $a in collection('cursos')//curso return <elem> {$a/guid} {$a/nome} </elem>	6.31 ms
+16:05:19.221	127.0.0.1:39512	admin	ERROR	Stopped at , 1/4: Unknown command: for. Try 'help'.	0.82 ms
+16:05:43.146	127.0.0.1:39518	admin	REQUEST	XQUERY <root>{ for $a in collection('cursos')//curso return <elem> {$a/guid} {$a/nome} </elem>}</root>	1.41 ms
+16:05:43.210	127.0.0.1:39518	admin	OK	Query executed in 60.82 ms.	64.09 ms
+16:05:57.510	SERVER	admin	OK	Server was stopped (port: 1984).
+16:08:20.629	SERVER	admin	OK	Server was started (port: 1984).
+16:08:34.176	127.0.0.1:39548	admin	REQUEST	XQUERY <root>{ for $a in collection('CursosUA')//curso return <elem> {$a/guid} {$a/nome} </elem>}</root>	65.09 ms
+16:08:34.821	127.0.0.1:39548	admin	OK	Query executed in 632.43 ms.	645.09 ms
+16:08:49.757	127.0.0.1:39556	admin	REQUEST	XQUERY <root>{ for $a in collection('CursosUA')//curso return <elem> {$a/guid} {$a/nome} </elem>}</root>	2.67 ms
+16:08:49.828	127.0.0.1:39556	admin	OK	Query executed in 68.08 ms.	69.89 ms
+16:12:25.521	127.0.0.1:39682	admin	REQUEST	XQUERY <root>{ for $a in collection('CursosUA')//curso return <elem> {$a/guid} {$a/nome} </elem>}</root>	0.86 ms
+16:12:25.543	127.0.0.1:39682	admin	OK	Query executed in 20.8 ms.	21.36 ms
+16:12:41.334	127.0.0.1:39688	admin	REQUEST	XQUERY <root>{ for $a in collection('CursosUA')//curso return <elem> {$a/guid} {$a/nome} </elem>}</root>	1.58 ms
+16:12:41.352	127.0.0.1:39688	admin	OK	Query executed in 16.87 ms.	17.61 ms
+16:14:19.524	127.0.0.1:39736	admin	REQUEST	XQUERY <root>{ for $a in collection('CursosUA')//curso return <elem> {$a/guid} {$a/nome} </elem>}</root>	0.34 ms
+16:14:19.534	127.0.0.1:39736	admin	OK	Query executed in 10.0 ms.	10.52 ms
+16:14:58.037	127.0.0.1:39744	admin	REQUEST	XQUERY for $a in collection('CursosUA')//curso return <elem> {$a/guid} {$a/nome} </elem>	0.36 ms
+16:14:58.044	127.0.0.1:39744	admin	OK	Query executed in 6.86 ms.	7.38 ms
+16:15:41.536	127.0.0.1:39750	admin	REQUEST	XQUERY <root>{ for $a in collection('CursosUA')//curso return <elem> {$a/guid} {$a/nome} </elem>}</root>	0.89 ms
+16:15:41.550	127.0.0.1:39750	admin	OK	Query executed in 13.29 ms.	14.32 ms
+16:16:09.474	127.0.0.1:39760	admin	REQUEST	XQUERY <root>{ for $a in collection('CursosUA')//curso return <elem> {$a/guid} {$a/nome} </elem>}</root>	0.37 ms
+16:16:09.478	127.0.0.1:39760	admin	OK	Query executed in 4.42 ms.	4.83 ms
+16:17:17.116	127.0.0.1:39774	admin	REQUEST	XQUERY <root>{ for $a in collection('CursosUA')//curso return <elem> {$a/guid} {$a/nome} </elem>}</root>	0.73 ms
+16:17:17.130	127.0.0.1:39774	admin	OK	Query executed in 12.91 ms.	13.96 ms
+16:19:39.661	127.0.0.1:39880	admin	REQUEST	XQUERY <root>{ for $a in collection('CursosUA')//curso return <elem> {$a/guid} {$a/nome} </elem>}</root>	0.37 ms
+16:19:39.665	127.0.0.1:39880	admin	OK	Query executed in 3.96 ms.	4.35 ms
+16:20:39.065	127.0.0.1:39888	admin	REQUEST	XQUERY <root>{ for $a in collection('CursosUA')//curso return <elem> {$a/guid} {$a/nome} </elem>}</root>	0.73 ms
+16:20:39.079	127.0.0.1:39888	admin	OK	Query executed in 13.66 ms.	14.84 ms
+16:21:09.088	127.0.0.1:39894	admin	REQUEST	XQUERY <root>{ for $a in collection('CursosUA')//curso return <elem> {$a/guid} {$a/nome} </elem>}</root>	0.35 ms
+16:21:09.093	127.0.0.1:39894	admin	OK	Query executed in 4.5 ms.	4.94 ms
+16:22:01.090	127.0.0.1:39904	admin	REQUEST	XQUERY <root>{ for $a in collection('CursosUA')//curso return <elem> {$a/guid} {$a/nome} </elem>}</root>	0.64 ms
+16:22:01.099	127.0.0.1:39904	admin	OK	Query executed in 8.12 ms.	8.9 ms
+16:22:14.868	127.0.0.1:39910	admin	REQUEST	XQUERY <root>{ for $a in collection('CursosUA')//curso return <elem> {$a/guid} {$a/nome} </elem>}</root>	0.8 ms
+16:22:14.878	127.0.0.1:39910	admin	OK	Query executed in 9.57 ms.	10.36 ms
+16:22:29.691	127.0.0.1:39922	admin	REQUEST	XQUERY <root>{ for $a in collection('CursosUA')//curso return <elem> {$a/guid} {$a/nome} </elem>}</root>	1.11 ms
+16:22:29.713	127.0.0.1:39922	admin	OK	Query executed in 19.62 ms.	21.5 ms
+16:23:22.083	127.0.0.1:39940	admin	REQUEST	XQUERY <root>{ for $a in collection('CursosUA')//curso return <elem> {$a/guid} {$a/nome} </elem>}</root>	0.63 ms
+16:23:22.092	127.0.0.1:39940	admin	OK	Query executed in 7.9 ms.	8.58 ms
+16:23:33.341	127.0.0.1:39950	admin	REQUEST	XQUERY <root>{ for $a in collection('CursosUA')//curso return <elem> {$a/guid} {$a/nome} </elem>}</root>	1.22 ms
+16:23:33.347	127.0.0.1:39950	admin	OK	Query executed in 6.0 ms.	6.62 ms
+16:24:18.016	127.0.0.1:39960	admin	REQUEST	XQUERY <root>{ for $a in collection('CursosUA')//curso return <elem> {$a/guid} {$a/nome} </elem>}</root>	1.44 ms
+16:24:18.039	127.0.0.1:39960	admin	OK	Query executed in 20.53 ms.	22.23 ms
+16:24:46.528	127.0.0.1:39968	admin	REQUEST	XQUERY <root>{ for $a in collection('CursosUA')//curso return <elem> {$a/guid} {$a/nome} </elem>}</root>	0.54 ms
+16:24:46.534	127.0.0.1:39968	admin	OK	Query executed in 5.85 ms.	6.49 ms
+16:26:47.364	127.0.0.1:40020	admin	REQUEST	XQUERY <root>{ for $a in collection('CursosUA')//curso return <elem> {$a/guid} {$a/nome} </elem>}</root>	0.78 ms
+16:26:47.373	127.0.0.1:40020	admin	OK	Query executed in 8.17 ms.	8.94 ms
+16:28:55.587	127.0.0.1:40038	admin	REQUEST	XQUERY <root>{ for $a in collection('CursosUA')//curso return <elem> {$a/guid} {$a/nome} </elem>}</root>	0.78 ms
+16:28:55.597	127.0.0.1:40038	admin	OK	Query executed in 8.88 ms.	9.66 ms
+16:29:15.634	127.0.0.1:40044	admin	REQUEST	XQUERY <root>{ for $a in collection('CursosUA')//curso return <elem> {$a/guid} {$a/nome} </elem>}</root>	0.34 ms
+16:29:15.639	127.0.0.1:40044	admin	OK	Query executed in 4.07 ms.	4.53 ms
+16:29:29.308	127.0.0.1:40050	admin	REQUEST	XQUERY <root>{ for $a in collection('CursosUA')//curso return <elem> {$a/guid} {$a/nome} </elem>}</root>	1.32 ms
+16:29:29.327	127.0.0.1:40050	admin	OK	Query executed in 17.63 ms.	19.03 ms
+16:34:43.206	SERVER	admin	OK	Server was stopped (port: 1984).
