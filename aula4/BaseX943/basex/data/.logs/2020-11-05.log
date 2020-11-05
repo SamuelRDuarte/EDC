@@ -1,0 +1,24 @@
+16:04:40.614	SERVER	admin	OK	Server was started (port: 1984).
+16:04:49.276	127.0.0.1:33734	admin	REQUEST	XQUERY <root>{ for $a in collection('SpotifyPlaylist')//element/track return <elem> {$a/name} {$a/external_urls/spotify} {$a/album/images/element/url} </elem> } </root>	72.21 ms
+16:04:50.554	127.0.0.1:33734	admin	OK	Query executed in 1265.66 ms.	1277.66 ms
+16:05:40.555	127.0.0.1:33746	admin	REQUEST	XQUERY <root>{ for $a in collection('SpotifyPlaylist')//element/track return <elem> {$a/name} {$a/external_urls/spotify} {$a/album/images/element/url} </elem> } </root>	4.23 ms
+16:05:40.668	127.0.0.1:33746	admin	OK	Query executed in 110.39 ms.	112.16 ms
+16:06:55.634	127.0.0.1:33758	admin	REQUEST	XQUERY <root>{ for $a in collection('SpotifyPlaylist')//element/track return <elem> {$a/name} {$a/external_urls/spotify} {$a/album/images/element/url} </elem> } </root>	0.94 ms
+16:06:55.701	127.0.0.1:33758	admin	OK	Query executed in 66.15 ms.	67.93 ms
+16:07:19.320	127.0.0.1:33766	admin	REQUEST	XQUERY <root>{ for $a in collection('SpotifyPlaylist')//element/track return <elem> {$a/name} {$a/external_urls/spotify} {$a/album/images/element/url} </elem> } </root>	0.48 ms
+16:07:19.359	127.0.0.1:33766	admin	OK	Query executed in 38.15 ms.	38.77 ms
+16:08:18.271	127.0.0.1:33772	admin	REQUEST	XQUERY <root>{ for $a in collection('SpotifyPlaylist')//element/track return <elem> {$a/name} {$a/external_urls/spotify} {$a/album/images/element/url} </elem> } </root>	0.52 ms
+16:08:18.312	127.0.0.1:33772	admin	OK	Query executed in 39.55 ms.	40.51 ms
+16:08:55.367	127.0.0.1:33772	admin	REQUEST	XQUERY <root>{ for $a in collection('SpotifyPlaylist')//element/track return <elem> {$a/name} {$a/external_urls/spotify} {$a/album/images/element/url} </elem> } </root>	3.85 ms
+16:08:55.441	127.0.0.1:33772	admin	OK	Query executed in 70.91 ms.	72.47 ms
+16:09:18.859	SERVER	admin	OK	Server was stopped (port: 1984).
+16:33:46.160	SERVER	admin	OK	Server was started (port: 1984).
+16:34:17.365	127.0.0.1:48264	admin	REQUEST	XQUERY <root>{ for $a in collection('SpotifyPlaylist')//element/track return <elem> {$a/name} {$a/external_urls/spotify} {$a/album/images/element/url} </elem> } </root>	1090.75 ms
+16:34:20.932	127.0.0.1:48264	admin	OK	Query executed in 3427.62 ms.	3566.43 ms
+16:34:21.102	127.0.0.1:48264	admin	REQUEST	XQUERY <root>{ for $a in collection('SpotifyPlaylist')//element/track return <elem> {$a/name} {$a/external_urls/spotify} {$a/album/images/element/url} </elem> } </root>	1.32 ms
+16:34:21.251	127.0.0.1:48264	admin	OK	Query executed in 148.03 ms.	149.21 ms
+16:34:21.395	127.0.0.1:48264	admin	REQUEST	XQUERY <root>{ for $a in collection('SpotifyPlaylist')//element/track return <elem> {$a/name} {$a/external_urls/spotify} {$a/album/images/element/url} </elem> } </root>	1.07 ms
+16:34:21.508	127.0.0.1:48264	admin	OK	Query executed in 111.55 ms.	112.68 ms
+16:34:21.562	127.0.0.1:48264	admin	REQUEST	XQUERY <root>{ for $a in collection('SpotifyPlaylist')//element/track return <elem> {$a/name} {$a/external_urls/spotify} {$a/album/images/element/url} </elem> } </root>	0.79 ms
+16:34:21.674	127.0.0.1:48264	admin	OK	Query executed in 111.23 ms.	112.31 ms
+16:55:12.433	SERVER	admin	OK	Server was stopped (port: 1984).

@@ -27,8 +27,10 @@ def print_elems(elem, text="", result=""):
 def home(request):
     input = "xquery <root>{ for $a in collection('CursosUA')//curso return <elem> {$a/guid} {$a/nome} </elem>}</root>"
     query = session.execute(input)
+    print(query)
     info = dict()
     res = xmltodict.parse(query)
+    print(res)
     for c in res["root"]["elem"]:
         info[c["guid"]] = c["nome"]
     tparams = {

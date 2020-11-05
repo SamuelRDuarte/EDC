@@ -1,0 +1,6 @@
+16:36:41.011	SERVER	admin	OK	Server was started (port: 1984).
+16:38:16.782	127.0.0.1:47598	admin	REQUEST	XQUERY <root>{ for $a in collection('CursosUA')//curso return <elem> {$a/guid} {$a/nome} </elem>}</root>	119.82 ms
+16:38:18.538	127.0.0.1:47598	admin	OK	Query executed in 1729.57 ms.	1755.96 ms
+16:40:23.191	127.0.0.1:47626	admin	REQUEST	XQUERY <root>{ for $a in collection('CursosUA')//curso return <elem> {$a/guid} {$a/nome} </elem>}</root>	3.75 ms
+16:40:23.245	127.0.0.1:47626	admin	OK	Query executed in 52.55 ms.	54.23 ms
+17:01:19.085	SERVER	admin	OK	Server was stopped (port: 1984).
