@@ -1,0 +1,30 @@
+23:00:54.841	SERVER	admin	OK	Server was started (port: 1984).
+23:01:16.734	127.0.0.1:45738	admin	REQUEST	XQUERY import module namespace funcsPlaylist = 'com.funcsPlaylist.my.index'; funcsPlaylist:home()	799.03 ms
+23:01:18.524	127.0.0.1:45738	admin	OK	Query executed in 1756.43 ms.	1789.38 ms
+23:01:22.115	127.0.0.1:45738	admin	REQUEST	XQUERY <root>{for $a in collection('SpotifyPlaylist')//playlistDemo return $a }</root>	15.14 ms
+23:01:22.132	127.0.0.1:45738	admin	OK	Query executed in 16.72 ms.	17.79 ms
+23:01:27.270	127.0.0.1:45738	admin	REQUEST	XQUERY import module namespace funcsPlaylist = 'com.funcsPlaylist.my.index'; funcsPlaylist:delete-playlist(5)	0.58 ms
+23:01:27.834	127.0.0.1:45738	admin	OK	Query executed in 563.41 ms.	564.61 ms
+23:01:27.863	127.0.0.1:45738	admin	REQUEST	XQUERY <root>{for $a in collection('SpotifyPlaylist')//playlistDemo return $a }</root>	1.4 ms
+23:01:27.888	127.0.0.1:45738	admin	OK	Query executed in 11.45 ms.	25.27 ms
+23:01:29.854	127.0.0.1:45738	admin	REQUEST	XQUERY import module namespace funcsPlaylist = 'com.funcsPlaylist.my.index'; funcsPlaylist:delete-playlist(4)	1.17 ms
+23:01:29.900	127.0.0.1:45738	admin	OK	Query executed in 43.96 ms.	45.49 ms
+23:01:29.910	127.0.0.1:45738	admin	REQUEST	XQUERY <root>{for $a in collection('SpotifyPlaylist')//playlistDemo return $a }</root>	0.61 ms
+23:01:29.921	127.0.0.1:45738	admin	OK	Query executed in 9.89 ms.	10.46 ms
+23:01:31.507	127.0.0.1:45738	admin	REQUEST	XQUERY import module namespace funcsPlaylist = 'com.funcsPlaylist.my.index'; funcsPlaylist:delete-playlist(3)	1.22 ms
+23:01:31.552	127.0.0.1:45738	admin	OK	Query executed in 43.54 ms.	45.16 ms
+23:01:31.572	127.0.0.1:45738	admin	REQUEST	XQUERY <root>{for $a in collection('SpotifyPlaylist')//playlistDemo return $a }</root>	0.43 ms
+23:01:31.579	127.0.0.1:45738	admin	OK	Query executed in 6.37 ms.	6.89 ms
+23:03:08.332	SERVER	admin	OK	Server was stopped (port: 1984).
+23:03:56.188	SERVER	admin	OK	Server was started (port: 1984).
+23:04:03.746	127.0.0.1:45794	admin	REQUEST	XQUERY import module namespace funcsPlaylist = 'com.funcsPlaylist.my.index'; funcsPlaylist:home()	56.72 ms
+23:04:04.982	127.0.0.1:45794	admin	OK	Query executed in 1220.41 ms.	1235.32 ms
+23:04:08.275	127.0.0.1:45794	admin	REQUEST	XQUERY import module namespace funcsPlaylist = 'com.funcsPlaylist.my.index'; funcsPlaylist:buscar-artistas()	1.24 ms
+23:04:08.489	127.0.0.1:45794	admin	OK	Query executed in 212.29 ms.	213.82 ms
+23:04:15.063	127.0.0.1:45794	admin	REQUEST	XQUERY import module namespace funcsPlaylist = 'com.funcsPlaylist.my.index'; funcsPlaylist:albums()	0.84 ms
+23:04:15.339	127.0.0.1:45794	admin	OK	Query executed in 274.22 ms.	276.01 ms
+23:04:18.504	127.0.0.1:45794	admin	REQUEST	XQUERY import module namespace funcsPlaylist = 'com.funcsPlaylist.my.index'; funcsPlaylist:artist-tracks('5MboRLcEpLbsshOx64OdA6')	0.75 ms
+23:04:18.549	127.0.0.1:45794	admin	OK	Query executed in 43.99 ms.	45.32 ms
+23:04:18.551	127.0.0.1:45794	admin	REQUEST	XQUERY import module namespace funcsPlaylist = 'com.funcsPlaylist.my.index'; funcsPlaylist:artist-name('5MboRLcEpLbsshOx64OdA6')	1.43 ms
+23:04:18.574	127.0.0.1:45794	admin	OK	Query executed in 22.07 ms.	22.85 ms
+23:04:34.418	SERVER	admin	OK	Server was stopped (port: 1984).

@@ -1,0 +1,232 @@
+14:06:08.560	SERVER	admin	OK	Server was started (port: 1984).
+14:06:27.955	127.0.0.1:39128	admin	REQUEST	XQUERY import module namespace funcsPlaylist = 'com.funcsPlaylist.my.index'; funcsPlaylist:home()	115.16 ms
+14:06:29.832	127.0.0.1:39128	admin	OK	Query executed in 1858.34 ms.	1877.68 ms
+14:06:36.112	127.0.0.1:39128	admin	REQUEST	XQUERY import module namespace funcsPlaylist = 'com.funcsPlaylist.my.index'; funcsPlaylist:buscar-artistas()	1.82 ms
+14:06:36.407	127.0.0.1:39128	admin	OK	Query executed in 292.45 ms.	294.62 ms
+14:15:20.614	127.0.0.1:39186	admin	REQUEST	XQUERY import module namespace funcsPlaylist = 'com.funcsPlaylist.my.index'; funcsPlaylist:buscar-artistas()	1.33 ms
+14:15:20.785	127.0.0.1:39186	admin	OK	Query executed in 168.65 ms.	170.51 ms
+14:27:42.757	127.0.0.1:39258	admin	REQUEST	XQUERY import module namespace funcsPlaylist = 'com.funcsPlaylist.my.index'; funcsPlaylist:buscar-artistas()	2.07 ms
+14:27:42.984	127.0.0.1:39258	admin	OK	Query executed in 186.83 ms.	226.3 ms
+14:27:58.526	127.0.0.1:39280	admin	REQUEST	XQUERY import module namespace funcsPlaylist = 'com.funcsPlaylist.my.index'; funcsPlaylist:buscar-artistas()	1.27 ms
+14:27:58.645	127.0.0.1:39280	admin	OK	Query executed in 117.12 ms.	118.5 ms
+14:29:31.647	127.0.0.1:39280	admin	REQUEST	XQUERY import module namespace funcsPlaylist = 'com.funcsPlaylist.my.index'; funcsPlaylist:buscar-artistas()	0.97 ms
+14:29:31.829	127.0.0.1:39280	admin	OK	Query executed in 180.76 ms.	182.35 ms
+14:34:35.466	127.0.0.1:39280	admin	REQUEST	XQUERY import module namespace funcsPlaylist = 'com.funcsPlaylist.my.index'; funcsPlaylist:buscar-artistas()	0.48 ms
+14:34:35.572	127.0.0.1:39280	admin	OK	Query executed in 105.22 ms.	106.0 ms
+14:35:16.953	127.0.0.1:39328	admin	REQUEST	XQUERY import module namespace funcsPlaylist = 'com.funcsPlaylist.my.index'; funcsPlaylist:buscar-artistas()	0.78 ms
+14:35:17.084	127.0.0.1:39328	admin	OK	Query executed in 129.46 ms.	130.61 ms
+14:35:24.103	127.0.0.1:39328	admin	REQUEST	XQUERY import module namespace funcsPlaylist = 'com.funcsPlaylist.my.index'; funcsPlaylist:buscar-artistas()	0.94 ms
+14:35:24.232	127.0.0.1:39328	admin	OK	Query executed in 127.18 ms.	128.75 ms
+14:35:34.950	127.0.0.1:39328	admin	REQUEST	XQUERY import module namespace funcsPlaylist = 'com.funcsPlaylist.my.index'; funcsPlaylist:buscar-artistas()	1.18 ms
+14:35:35.079	127.0.0.1:39328	admin	OK	Query executed in 128.24 ms.	128.87 ms
+14:36:27.960	127.0.0.1:39328	admin	REQUEST	XQUERY import module namespace funcsPlaylist = 'com.funcsPlaylist.my.index'; funcsPlaylist:buscar-artistas()	0.52 ms
+14:36:28.089	127.0.0.1:39328	admin	OK	Query executed in 128.25 ms.	129.12 ms
+14:38:30.240	127.0.0.1:39328	admin	REQUEST	XQUERY import module namespace funcsPlaylist = 'com.funcsPlaylist.my.index'; funcsPlaylist:buscar-artistas()	0.3 ms
+14:38:30.345	127.0.0.1:39328	admin	OK	Query executed in 103.75 ms.	104.4 ms
+14:38:34.685	127.0.0.1:39328	admin	REQUEST	XQUERY import module namespace funcsPlaylist = 'com.funcsPlaylist.my.index'; funcsPlaylist:buscar-artistas()	0.66 ms
+14:38:34.800	127.0.0.1:39328	admin	OK	Query executed in 113.21 ms.	114.31 ms
+14:41:57.703	127.0.0.1:39328	admin	REQUEST	XQUERY import module namespace funcsPlaylist = 'com.funcsPlaylist.my.index'; funcsPlaylist:buscar-artistas()	0.57 ms
+14:41:57.821	127.0.0.1:39328	admin	OK	Query executed in 117.55 ms.	118.44 ms
+14:42:40.732	127.0.0.1:39328	admin	REQUEST	XQUERY import module namespace funcsPlaylist = 'com.funcsPlaylist.my.index'; funcsPlaylist:buscar-artistas()	0.36 ms
+14:42:40.834	127.0.0.1:39328	admin	OK	Query executed in 101.3 ms.	101.97 ms
+14:43:00.584	127.0.0.1:39328	admin	REQUEST	XQUERY import module namespace funcsPlaylist = 'com.funcsPlaylist.my.index'; funcsPlaylist:buscar-artistas()	0.74 ms
+14:43:00.700	127.0.0.1:39328	admin	OK	Query executed in 113.52 ms.	115.29 ms
+14:43:12.842	127.0.0.1:39328	admin	REQUEST	XQUERY <root>{ for $a in collection('SpotifyPlaylist')//element/track[artists/element/id/text()=''] return <elem> {$a/name} {$a/external_urls/spotify} {($a/album/images/element/url)[last()]} </elem> } </root>	0.83 ms
+14:43:12.861	127.0.0.1:39328	admin	OK	Query executed in 19.1 ms.	19.83 ms
+14:43:12.862	127.0.0.1:39328	admin	REQUEST	XQUERY <root>{ let $q := (collection('SpotifyPlaylist')//track/artists/element[id/text() =''])[last()] return $q/name }</root>	0.38 ms
+14:43:12.871	127.0.0.1:39328	admin	OK	Query executed in 8.56 ms.	9.12 ms
+14:44:05.057	127.0.0.1:39328	admin	REQUEST	XQUERY <root>{ for $a in collection('SpotifyPlaylist')//element/track[artists/element/id/text()=''] return <elem> {$a/name} {$a/external_urls/spotify} {($a/album/images/element/url)[last()]} </elem> } </root>	0.34 ms
+14:44:05.069	127.0.0.1:39328	admin	OK	Query executed in 12.06 ms.	12.39 ms
+14:44:05.070	127.0.0.1:39328	admin	REQUEST	XQUERY <root>{ let $q := (collection('SpotifyPlaylist')//track/artists/element[id/text() =''])[last()] return $q/name }</root>	0.27 ms
+14:44:05.077	127.0.0.1:39328	admin	OK	Query executed in 6.4 ms.	6.71 ms
+14:44:11.034	127.0.0.1:39328	admin	REQUEST	XQUERY <root>{ for $a in collection('SpotifyPlaylist')//element/track[artists/element/id/text()='None'] return <elem> {$a/name} {$a/external_urls/spotify} {($a/album/images/element/url)[last()]} </elem> } </root>	1.4 ms
+14:44:11.048	127.0.0.1:39328	admin	OK	Query executed in 12.72 ms.	13.43 ms
+14:44:11.048	127.0.0.1:39328	admin	REQUEST	XQUERY <root>{ let $q := (collection('SpotifyPlaylist')//track/artists/element[id/text() ='None'])[last()] return $q/name }</root>	0.37 ms
+14:44:11.056	127.0.0.1:39328	admin	OK	Query executed in 6.94 ms.	7.44 ms
+14:44:48.364	127.0.0.1:39390	admin	REQUEST	XQUERY import module namespace funcsPlaylist = 'com.funcsPlaylist.my.index'; funcsPlaylist:buscar-artistas()	0.32 ms
+14:44:48.524	127.0.0.1:39390	admin	OK	Query executed in 159.08 ms.	159.74 ms
+14:44:50.598	127.0.0.1:39390	admin	REQUEST	XQUERY <root>{ for $a in collection('SpotifyPlaylist')//element/track[artists/element/id/text()='5MboRLcEpLbsshOx64OdA6'] return <elem> {$a/name} {$a/external_urls/spotify} {($a/album/images/element/url)[last()]} </elem> } </root>	7.98 ms
+14:44:50.621	127.0.0.1:39390	admin	OK	Query executed in 15.36 ms.	16.42 ms
+14:44:50.622	127.0.0.1:39390	admin	REQUEST	XQUERY <root>{ let $q := (collection('SpotifyPlaylist')//track/artists/element[id/text() ='5MboRLcEpLbsshOx64OdA6'])[last()] return $q/name }</root>	0.3 ms
+14:44:50.629	127.0.0.1:39390	admin	OK	Query executed in 7.14 ms.	7.61 ms
+14:46:19.926	127.0.0.1:39390	admin	REQUEST	XQUERY import module namespace funcsPlaylist = 'com.funcsPlaylist.my.index'; funcsPlaylist:buscar-artistas()	0.66 ms
+14:46:20.061	127.0.0.1:39390	admin	OK	Query executed in 133.78 ms.	134.57 ms
+14:46:50.982	127.0.0.1:39416	admin	REQUEST	XQUERY import module namespace funcsPlaylist = 'com.funcsPlaylist.my.index'; funcsPlaylist:buscar-artistas()	0.65 ms
+14:46:51.086	127.0.0.1:39416	admin	OK	Query executed in 103.6 ms.	104.3 ms
+14:47:48.871	127.0.0.1:39416	admin	REQUEST	XQUERY import module namespace funcsPlaylist = 'com.funcsPlaylist.my.index'; funcsPlaylist:buscar-artistas()	0.61 ms
+14:47:49.051	127.0.0.1:39416	admin	OK	Query executed in 178.34 ms.	179.35 ms
+14:47:52.166	127.0.0.1:39416	admin	REQUEST	XQUERY <root>{ for $a in collection('SpotifyPlaylist')//element/track[artists/element/id/text()='5MboRLcEpLbsshOx64OdA6'] return <elem> {$a/name} {$a/external_urls/spotify} {($a/album/images/element/url)[last()]} </elem> } </root>	0.39 ms
+14:47:52.176	127.0.0.1:39416	admin	OK	Query executed in 9.38 ms.	9.86 ms
+14:47:52.177	127.0.0.1:39416	admin	REQUEST	XQUERY <root>{ let $q := (collection('SpotifyPlaylist')//track/artists/element[id/text() ='5MboRLcEpLbsshOx64OdA6'])[last()] return $q/name }</root>	0.73 ms
+14:47:52.181	127.0.0.1:39416	admin	OK	Query executed in 4.17 ms.	4.59 ms
+14:48:41.672	127.0.0.1:39416	admin	REQUEST	XQUERY import module namespace funcsPlaylist = 'com.funcsPlaylist.my.index'; funcsPlaylist:buscar-artistas()	0.8 ms
+14:48:41.835	127.0.0.1:39416	admin	OK	Query executed in 162.52 ms.	163.18 ms
+14:48:45.678	127.0.0.1:39416	admin	REQUEST	XQUERY <root>{ for $a in collection('SpotifyPlaylist')//element/track[artists/element/id/text()='5MboRLcEpLbsshOx64OdA6'] return <elem> {$a/name} {$a/external_urls/spotify} {($a/album/images/element/url)[last()]} </elem> } </root>	4.16 ms
+14:48:45.706	127.0.0.1:39416	admin	OK	Query executed in 27.03 ms.	28.08 ms
+14:48:45.707	127.0.0.1:39416	admin	REQUEST	XQUERY <root>{ let $q := (collection('SpotifyPlaylist')//track/artists/element[id/text() ='5MboRLcEpLbsshOx64OdA6'])[last()] return $q/name }</root>	0.6 ms
+14:48:45.715	127.0.0.1:39416	admin	OK	Query executed in 8.1 ms.	8.53 ms
+14:50:33.948	127.0.0.1:39432	admin	REQUEST	XQUERY import module namespace funcsPlaylist = 'com.funcsPlaylist.my.index'; funcsPlaylist:buscar-artistas()	0.62 ms
+14:50:34.118	127.0.0.1:39432	admin	OK	Query executed in 168.58 ms.	169.83 ms
+14:50:50.660	127.0.0.1:39432	admin	REQUEST	XQUERY import module namespace funcsPlaylist = 'com.funcsPlaylist.my.index'; funcsPlaylist:buscar-artistas()	0.69 ms
+14:50:50.772	127.0.0.1:39432	admin	OK	Query executed in 111.55 ms.	112.41 ms
+15:01:00.458	127.0.0.1:39462	admin	REQUEST	XQUERY <root>{ for $a in collection('SpotifyPlaylist')//element/track[artists/element/id/text()='5MboRLcEpLbsshOx64OdA6'] return <elem> {$a/name} {$a/external_urls/spotify} {($a/album/images/element/url)[last()]} </elem> } </root>	0.65 ms
+15:01:00.473	127.0.0.1:39462	admin	OK	Query executed in 13.91 ms.	14.53 ms
+15:01:00.473	127.0.0.1:39462	admin	REQUEST	XQUERY <root>{ let $q := (collection('SpotifyPlaylist')//track/artists/element[id/text() ='5MboRLcEpLbsshOx64OdA6'])[last()] return $q/name }</root>	0.27 ms
+15:01:00.479	127.0.0.1:39462	admin	OK	Query executed in 5.0 ms.	5.3 ms
+15:25:46.864	127.0.0.1:39476	admin	REQUEST	XQUERY <root>{ for $a in collection('SpotifyPlaylist')//element/track[artists/element/id/text()='5MboRLcEpLbsshOx64OdA6'] return <elem> {$a/name} {$a/external_urls/spotify} {($a/album/images/element/url)[last()]} </elem> } </root>	0.94 ms
+15:25:46.939	127.0.0.1:39476	admin	OK	Query executed in 70.61 ms.	75.1 ms
+15:25:46.941	127.0.0.1:39476	admin	REQUEST	XQUERY <root>{ let $q := (collection('SpotifyPlaylist')//track/artists/element[id/text() ='5MboRLcEpLbsshOx64OdA6'])[last()] return $q/name }</root>	1.34 ms
+15:25:46.960	127.0.0.1:39476	admin	OK	Query executed in 17.84 ms.	19.34 ms
+15:33:36.842	127.0.0.1:39476	admin	REQUEST	XQUERY <root>{ for $a in collection('SpotifyPlaylist')//element/track[artists/element/id/text()='5MboRLcEpLbsshOx64OdA6'] return <elem> {$a/name} {$a/external_urls/spotify} {($a/album/images/element/url)[last()]} </elem> } </root>	1.78 ms
+15:33:36.891	127.0.0.1:39476	admin	OK	Query executed in 47.89 ms.	48.82 ms
+15:33:36.893	127.0.0.1:39476	admin	REQUEST	XQUERY <root>{ let $q := (collection('SpotifyPlaylist')//track/artists/element[id/text() ='5MboRLcEpLbsshOx64OdA6'])[last()] return $q/name }</root>	0.93 ms
+15:33:36.911	127.0.0.1:39476	admin	OK	Query executed in 17.01 ms.	18.09 ms
+15:34:10.935	127.0.0.1:39664	admin	REQUEST	XQUERY <root>{ for $a in collection('SpotifyPlaylist')//element/track[artists/element/id/text()='5MboRLcEpLbsshOx64OdA6'] return <elem> {$a/name} {$a/external_urls/spotify} {($a/album/images/element/url)[last()]} </elem> } </root>	0.82 ms
+15:34:10.969	127.0.0.1:39664	admin	OK	Query executed in 32.31 ms.	33.42 ms
+15:34:10.970	127.0.0.1:39664	admin	REQUEST	XQUERY <root>{ let $q := (collection('SpotifyPlaylist')//track/artists/element[id/text() ='5MboRLcEpLbsshOx64OdA6'])[last()] return $q/name }</root>	0.72 ms
+15:34:10.988	127.0.0.1:39664	admin	OK	Query executed in 17.09 ms.	17.98 ms
+15:35:15.508	127.0.0.1:39664	admin	REQUEST	XQUERY <root>{ for $a in collection('SpotifyPlaylist')//element/track[artists/element/id/text()='5MboRLcEpLbsshOx64OdA6'] return <elem> {$a/name} {$a/external_urls/spotify} {($a/album/images/element/url)[last()]} </elem> } </root>	0.75 ms
+15:35:15.524	127.0.0.1:39664	admin	OK	Query executed in 15.01 ms.	15.69 ms
+15:35:15.525	127.0.0.1:39664	admin	REQUEST	XQUERY <root>{ let $q := (collection('SpotifyPlaylist')//track/artists/element[id/text() ='5MboRLcEpLbsshOx64OdA6'])[last()] return $q/name }</root>	0.72 ms
+15:35:15.532	127.0.0.1:39664	admin	OK	Query executed in 6.04 ms.	6.8 ms
+15:35:30.842	127.0.0.1:39664	admin	REQUEST	XQUERY <root>{ for $a in collection('SpotifyPlaylist')//element/track[artists/element/id/text()='5MboRLcEpLbsshOx64OdA6'] return <elem> {$a/name} {$a/external_urls/spotify} {($a/album/images/element/url)[last()]} </elem> } </root>	0.68 ms
+15:35:30.867	127.0.0.1:39664	admin	OK	Query executed in 24.24 ms.	25.14 ms
+15:35:30.868	127.0.0.1:39664	admin	REQUEST	XQUERY <root>{ let $q := (collection('SpotifyPlaylist')//track/artists/element[id/text() ='5MboRLcEpLbsshOx64OdA6'])[last()] return $q/name }</root>	0.86 ms
+15:35:30.888	127.0.0.1:39664	admin	OK	Query executed in 18.78 ms.	19.92 ms
+15:35:45.203	127.0.0.1:39664	admin	REQUEST	XQUERY <root>{ for $a in collection('SpotifyPlaylist')//element/track[artists/element/id/text()='5MboRLcEpLbsshOx64OdA6'] return <elem> {$a/name} {$a/external_urls/spotify} {($a/album/images/element/url)[last()]} </elem> } </root>	0.66 ms
+15:35:45.219	127.0.0.1:39664	admin	OK	Query executed in 15.26 ms.	15.91 ms
+15:35:45.220	127.0.0.1:39664	admin	REQUEST	XQUERY <root>{ let $q := (collection('SpotifyPlaylist')//track/artists/element[id/text() ='5MboRLcEpLbsshOx64OdA6'])[last()] return $q/name }</root>	0.48 ms
+15:35:45.230	127.0.0.1:39664	admin	OK	Query executed in 9.2 ms.	9.76 ms
+15:36:20.846	127.0.0.1:39664	admin	REQUEST	XQUERY <root>{ for $a in collection('SpotifyPlaylist')//element/track[artists/element/id/text()='5MboRLcEpLbsshOx64OdA6'] return <elem> {$a/name} {$a/external_urls/spotify} {($a/album/images/element/url)[last()]} </elem> } </root>	1.22 ms
+15:36:20.886	127.0.0.1:39664	admin	OK	Query executed in 38.88 ms.	39.91 ms
+15:36:20.887	127.0.0.1:39664	admin	REQUEST	XQUERY <root>{ let $q := (collection('SpotifyPlaylist')//track/artists/element[id/text() ='5MboRLcEpLbsshOx64OdA6'])[last()] return $q/name }</root>	1.23 ms
+15:36:20.900	127.0.0.1:39664	admin	OK	Query executed in 11.89 ms.	12.89 ms
+15:36:26.728	127.0.0.1:39664	admin	REQUEST	XQUERY <root>{ for $a in collection('SpotifyPlaylist')//element/track[artists/element/id/text()='5MboRLcEpLbsshOx64OdA6'] return <elem> {$a/name} {$a/external_urls/spotify} {($a/album/images/element/url)[last()]} </elem> } </root>	1.02 ms
+15:36:26.767	127.0.0.1:39664	admin	OK	Query executed in 37.65 ms.	39.02 ms
+15:36:26.771	127.0.0.1:39664	admin	REQUEST	XQUERY <root>{ let $q := (collection('SpotifyPlaylist')//track/artists/element[id/text() ='5MboRLcEpLbsshOx64OdA6'])[last()] return $q/name }</root>	1.45 ms
+15:36:26.789	127.0.0.1:39664	admin	OK	Query executed in 16.51 ms.	17.22 ms
+15:36:36.961	127.0.0.1:39664	admin	REQUEST	XQUERY <root>{ for $a in collection('SpotifyPlaylist')//element/track[artists/element/id/text()='5MboRLcEpLbsshOx64OdA6'] return <elem> {$a/name} {$a/external_urls/spotify} {($a/album/images/element/url)[last()]} </elem> } </root>	0.86 ms
+15:36:36.991	127.0.0.1:39664	admin	OK	Query executed in 28.63 ms.	29.5 ms
+15:36:36.992	127.0.0.1:39664	admin	REQUEST	XQUERY <root>{ let $q := (collection('SpotifyPlaylist')//track/artists/element[id/text() ='5MboRLcEpLbsshOx64OdA6'])[last()] return $q/name }</root>	0.58 ms
+15:36:37.013	127.0.0.1:39664	admin	OK	Query executed in 19.71 ms.	20.84 ms
+15:36:42.945	127.0.0.1:39664	admin	REQUEST	XQUERY <root>{ for $a in collection('SpotifyPlaylist')//element/track[artists/element/id/text()='5MboRLcEpLbsshOx64OdA6'] return <elem> {$a/name} {$a/external_urls/spotify} {($a/album/images/element/url)[last()]} </elem> } </root>	1.22 ms
+15:36:42.973	127.0.0.1:39664	admin	OK	Query executed in 26.67 ms.	27.57 ms
+15:36:42.974	127.0.0.1:39664	admin	REQUEST	XQUERY <root>{ let $q := (collection('SpotifyPlaylist')//track/artists/element[id/text() ='5MboRLcEpLbsshOx64OdA6'])[last()] return $q/name }</root>	0.43 ms
+15:36:42.982	127.0.0.1:39664	admin	OK	Query executed in 7.8 ms.	8.25 ms
+15:37:07.930	127.0.0.1:39664	admin	REQUEST	XQUERY <root>{ for $a in collection('SpotifyPlaylist')//element/track[artists/element/id/text()='5MboRLcEpLbsshOx64OdA6'] return <elem> {$a/name} {$a/external_urls/spotify} {($a/album/images/element/url)[last()]} </elem> } </root>	1.18 ms
+15:37:07.986	127.0.0.1:39664	admin	OK	Query executed in 55.22 ms.	56.38 ms
+15:37:07.988	127.0.0.1:39664	admin	REQUEST	XQUERY <root>{ let $q := (collection('SpotifyPlaylist')//track/artists/element[id/text() ='5MboRLcEpLbsshOx64OdA6'])[last()] return $q/name }</root>	0.54 ms
+15:37:07.996	127.0.0.1:39664	admin	OK	Query executed in 7.88 ms.	8.42 ms
+15:37:16.263	127.0.0.1:39664	admin	REQUEST	XQUERY <root>{ for $a in collection('SpotifyPlaylist')//element/track[artists/element/id/text()='5MboRLcEpLbsshOx64OdA6'] return <elem> {$a/name} {$a/external_urls/spotify} {($a/album/images/element/url)[last()]} </elem> } </root>	4.18 ms
+15:37:16.306	127.0.0.1:39664	admin	OK	Query executed in 38.75 ms.	39.72 ms
+15:37:16.307	127.0.0.1:39664	admin	REQUEST	XQUERY <root>{ let $q := (collection('SpotifyPlaylist')//track/artists/element[id/text() ='5MboRLcEpLbsshOx64OdA6'])[last()] return $q/name }</root>	0.33 ms
+15:37:16.315	127.0.0.1:39664	admin	OK	Query executed in 7.34 ms.	7.88 ms
+15:37:25.358	127.0.0.1:39664	admin	REQUEST	XQUERY <root>{ for $a in collection('SpotifyPlaylist')//element/track[artists/element/id/text()='5MboRLcEpLbsshOx64OdA6'] return <elem> {$a/name} {$a/external_urls/spotify} {($a/album/images/element/url)[last()]} </elem> } </root>	0.84 ms
+15:37:25.389	127.0.0.1:39664	admin	OK	Query executed in 30.31 ms.	31.13 ms
+15:37:25.390	127.0.0.1:39664	admin	REQUEST	XQUERY <root>{ let $q := (collection('SpotifyPlaylist')//track/artists/element[id/text() ='5MboRLcEpLbsshOx64OdA6'])[last()] return $q/name }</root>	0.69 ms
+15:37:25.408	127.0.0.1:39664	admin	OK	Query executed in 17.25 ms.	18.11 ms
+15:38:24.651	127.0.0.1:39664	admin	REQUEST	XQUERY <root>{ for $a in collection('SpotifyPlaylist')//element/track[artists/element/id/text()='5MboRLcEpLbsshOx64OdA6'] return <elem> {$a/name} {$a/external_urls/spotify} {($a/album/images/element/url)[last()]} </elem> } </root>	0.68 ms
+15:38:24.670	127.0.0.1:39664	admin	OK	Query executed in 18.6 ms.	19.31 ms
+15:38:24.671	127.0.0.1:39664	admin	REQUEST	XQUERY <root>{ let $q := (collection('SpotifyPlaylist')//track/artists/element[id/text() ='5MboRLcEpLbsshOx64OdA6'])[last()] return $q/name }</root>	0.63 ms
+15:38:24.686	127.0.0.1:39664	admin	OK	Query executed in 13.9 ms.	14.54 ms
+15:38:46.241	127.0.0.1:39664	admin	REQUEST	XQUERY <root>{ for $a in collection('SpotifyPlaylist')//element/track[artists/element/id/text()='5MboRLcEpLbsshOx64OdA6'] return <elem> {$a/name} {$a/external_urls/spotify} {($a/album/images/element/url)[last()]} </elem> } </root>	0.66 ms
+15:38:46.275	127.0.0.1:39664	admin	OK	Query executed in 32.59 ms.	33.54 ms
+15:38:46.276	127.0.0.1:39664	admin	REQUEST	XQUERY <root>{ let $q := (collection('SpotifyPlaylist')//track/artists/element[id/text() ='5MboRLcEpLbsshOx64OdA6'])[last()] return $q/name }</root>	0.84 ms
+15:38:46.296	127.0.0.1:39664	admin	OK	Query executed in 18.58 ms.	19.55 ms
+15:39:14.288	127.0.0.1:39664	admin	REQUEST	XQUERY <root>{ for $a in collection('SpotifyPlaylist')//element/track[artists/element/id/text()='5MboRLcEpLbsshOx64OdA6'] return <elem> {$a/name} {$a/external_urls/spotify} {($a/album/images/element/url)[last()]} </elem> } </root>	0.71 ms
+15:39:14.314	127.0.0.1:39664	admin	OK	Query executed in 24.97 ms.	25.8 ms
+15:39:14.314	127.0.0.1:39664	admin	REQUEST	XQUERY <root>{ let $q := (collection('SpotifyPlaylist')//track/artists/element[id/text() ='5MboRLcEpLbsshOx64OdA6'])[last()] return $q/name }</root>	0.41 ms
+15:39:14.325	127.0.0.1:39664	admin	OK	Query executed in 10.17 ms.	10.63 ms
+15:40:09.979	127.0.0.1:39768	admin	REQUEST	XQUERY <root>{ for $a in collection('SpotifyPlaylist')//element/track[artists/element/id/text()='5MboRLcEpLbsshOx64OdA6'] return <elem> {$a/name} {$a/external_urls/spotify} {($a/album/images/element/url)[last()]} </elem> } </root>	1.09 ms
+15:40:10.011	127.0.0.1:39768	admin	OK	Query executed in 30.63 ms.	31.74 ms
+15:40:10.013	127.0.0.1:39768	admin	REQUEST	XQUERY <root>{ let $q := (collection('SpotifyPlaylist')//track/artists/element[id/text() ='5MboRLcEpLbsshOx64OdA6'])[last()] return $q/name }</root>	0.99 ms
+15:40:10.028	127.0.0.1:39768	admin	OK	Query executed in 13.9 ms.	14.75 ms
+15:40:56.093	127.0.0.1:39768	admin	REQUEST	XQUERY <root>{ for $a in collection('SpotifyPlaylist')//element/track[artists/element/id/text()='5MboRLcEpLbsshOx64OdA6'] return <elem> {$a/name} {$a/external_urls/spotify} {($a/album/images/element/url)[last()]} </elem> } </root>	0.59 ms
+15:40:56.112	127.0.0.1:39768	admin	OK	Query executed in 18.37 ms.	19.04 ms
+15:40:56.113	127.0.0.1:39768	admin	REQUEST	XQUERY <root>{ let $q := (collection('SpotifyPlaylist')//track/artists/element[id/text() ='5MboRLcEpLbsshOx64OdA6'])[last()] return $q/name }</root>	0.42 ms
+15:40:56.126	127.0.0.1:39768	admin	OK	Query executed in 12.24 ms.	12.87 ms
+15:43:39.561	127.0.0.1:39768	admin	REQUEST	XQUERY <root>{ for $a in collection('SpotifyPlaylist')//element/track[artists/element/id/text()='5MboRLcEpLbsshOx64OdA6'] return <elem> {$a/name} {$a/external_urls/spotify} {($a/album/images/element/url)[last()]} </elem> } </root>	0.5 ms
+15:43:39.580	127.0.0.1:39768	admin	OK	Query executed in 17.32 ms.	18.38 ms
+15:43:39.581	127.0.0.1:39768	admin	REQUEST	XQUERY <root>{ let $q := (collection('SpotifyPlaylist')//track/artists/element[id/text() ='5MboRLcEpLbsshOx64OdA6'])[last()] return $q/name }</root>	0.61 ms
+15:43:39.591	127.0.0.1:39768	admin	OK	Query executed in 9.79 ms.	10.35 ms
+15:43:55.506	127.0.0.1:39768	admin	REQUEST	XQUERY <root>{ for $a in collection('SpotifyPlaylist')//element/track[artists/element/id/text()='5MboRLcEpLbsshOx64OdA6'] return <elem> {$a/name} {$a/external_urls/spotify} {($a/album/images/element/url)[last()]} </elem> } </root>	0.56 ms
+15:43:55.526	127.0.0.1:39768	admin	OK	Query executed in 18.9 ms.	19.61 ms
+15:43:55.528	127.0.0.1:39768	admin	REQUEST	XQUERY <root>{ let $q := (collection('SpotifyPlaylist')//track/artists/element[id/text() ='5MboRLcEpLbsshOx64OdA6'])[last()] return $q/name }</root>	1.18 ms
+15:43:55.544	127.0.0.1:39768	admin	OK	Query executed in 15.04 ms.	15.89 ms
+15:44:19.243	127.0.0.1:39768	admin	REQUEST	XQUERY <root>{ for $a in collection('SpotifyPlaylist')//element/track[artists/element/id/text()='5MboRLcEpLbsshOx64OdA6'] return <elem> {$a/name} {$a/external_urls/spotify} {($a/album/images/element/url)[last()]} </elem> } </root>	0.52 ms
+15:44:19.264	127.0.0.1:39768	admin	OK	Query executed in 19.97 ms.	20.63 ms
+15:44:19.265	127.0.0.1:39768	admin	REQUEST	XQUERY <root>{ let $q := (collection('SpotifyPlaylist')//track/artists/element[id/text() ='5MboRLcEpLbsshOx64OdA6'])[last()] return $q/name }</root>	0.47 ms
+15:44:19.275	127.0.0.1:39768	admin	OK	Query executed in 9.9 ms.	10.54 ms
+15:44:27.190	127.0.0.1:39768	admin	REQUEST	XQUERY <root>{ for $a in collection('SpotifyPlaylist')//element/track[artists/element/id/text()='5MboRLcEpLbsshOx64OdA6'] return <elem> {$a/name} {$a/external_urls/spotify} {($a/album/images/element/url)[last()]} </elem> } </root>	1.01 ms
+15:44:27.220	127.0.0.1:39768	admin	OK	Query executed in 28.69 ms.	29.57 ms
+15:44:27.221	127.0.0.1:39768	admin	REQUEST	XQUERY <root>{ let $q := (collection('SpotifyPlaylist')//track/artists/element[id/text() ='5MboRLcEpLbsshOx64OdA6'])[last()] return $q/name }</root>	0.79 ms
+15:44:27.237	127.0.0.1:39768	admin	OK	Query executed in 15.21 ms.	15.82 ms
+15:47:19.257	127.0.0.1:39768	admin	REQUEST	XQUERY <root>{ for $a in collection('SpotifyPlaylist')//element/track[artists/element/id/text()='5MboRLcEpLbsshOx64OdA6'] return <elem> {$a/name} {$a/external_urls/spotify} {($a/album/images/element/url)[last()]} </elem> } </root>	0.77 ms
+15:47:19.273	127.0.0.1:39768	admin	OK	Query executed in 15.81 ms.	16.36 ms
+15:47:19.274	127.0.0.1:39768	admin	REQUEST	XQUERY <root>{ let $q := (collection('SpotifyPlaylist')//track/artists/element[id/text() ='5MboRLcEpLbsshOx64OdA6'])[last()] return $q/name }</root>	0.62 ms
+15:47:19.281	127.0.0.1:39768	admin	OK	Query executed in 6.4 ms.	6.94 ms
+15:47:58.692	127.0.0.1:39768	admin	REQUEST	XQUERY <root>{ for $a in collection('SpotifyPlaylist')//element/track[artists/element/id/text()='5MboRLcEpLbsshOx64OdA6'] return <elem> {$a/name} {$a/external_urls/spotify} {($a/album/images/element/url)[last()]} </elem> } </root>	0.74 ms
+15:47:58.705	127.0.0.1:39768	admin	OK	Query executed in 12.65 ms.	13.18 ms
+15:47:58.706	127.0.0.1:39768	admin	REQUEST	XQUERY <root>{ let $q := (collection('SpotifyPlaylist')//track/artists/element[id/text() ='5MboRLcEpLbsshOx64OdA6'])[last()] return $q/name }</root>	0.34 ms
+15:47:58.713	127.0.0.1:39768	admin	OK	Query executed in 6.58 ms.	6.96 ms
+15:49:31.200	127.0.0.1:39768	admin	REQUEST	XQUERY <root>{ for $a in collection('SpotifyPlaylist')//element/track[artists/element/id/text()='5MboRLcEpLbsshOx64OdA6'] return <elem> {$a/name} {$a/external_urls/spotify} {($a/album/images/element/url)[last()]} </elem> } </root>	0.57 ms
+15:49:31.219	127.0.0.1:39768	admin	OK	Query executed in 18.95 ms.	19.51 ms
+15:49:31.220	127.0.0.1:39768	admin	REQUEST	XQUERY <root>{ let $q := (collection('SpotifyPlaylist')//track/artists/element[id/text() ='5MboRLcEpLbsshOx64OdA6'])[last()] return $q/name }</root>	0.48 ms
+15:49:31.228	127.0.0.1:39768	admin	OK	Query executed in 7.73 ms.	8.15 ms
+15:49:40.008	127.0.0.1:39768	admin	REQUEST	XQUERY <root>{ for $a in collection('SpotifyPlaylist')//element/track[artists/element/id/text()='5MboRLcEpLbsshOx64OdA6'] return <elem> {$a/name} {$a/external_urls/spotify} {($a/album/images/element/url)[last()]} </elem> } </root>	0.3 ms
+15:49:40.015	127.0.0.1:39768	admin	OK	Query executed in 6.94 ms.	7.21 ms
+15:49:40.016	127.0.0.1:39768	admin	REQUEST	XQUERY <root>{ let $q := (collection('SpotifyPlaylist')//track/artists/element[id/text() ='5MboRLcEpLbsshOx64OdA6'])[last()] return $q/name }</root>	0.22 ms
+15:49:40.020	127.0.0.1:39768	admin	OK	Query executed in 4.09 ms.	4.36 ms
+15:53:40.436	127.0.0.1:39768	admin	REQUEST	XQUERY <root>{ for $a in collection('SpotifyPlaylist')//element/track[artists/element/id/text()='5MboRLcEpLbsshOx64OdA6'] return <elem> {$a/name} {$a/external_urls/spotify} {($a/album/images/element/url)[last()]} </elem> } </root>	0.47 ms
+15:53:40.450	127.0.0.1:39768	admin	OK	Query executed in 13.41 ms.	13.91 ms
+15:53:40.451	127.0.0.1:39768	admin	REQUEST	XQUERY <root>{ let $q := (collection('SpotifyPlaylist')//track/artists/element[id/text() ='5MboRLcEpLbsshOx64OdA6'])[last()] return $q/name }</root>	0.4 ms
+15:53:40.461	127.0.0.1:39768	admin	OK	Query executed in 10.04 ms.	10.56 ms
+15:54:01.266	127.0.0.1:39768	admin	REQUEST	XQUERY <root>{ for $a in collection('SpotifyPlaylist')//element/track[artists/element/id/text()='5MboRLcEpLbsshOx64OdA6'] return <elem> {$a/name} {$a/external_urls/spotify} {($a/album/images/element/url)[last()]} </elem> } </root>	0.47 ms
+15:54:01.282	127.0.0.1:39768	admin	OK	Query executed in 14.62 ms.	15.16 ms
+15:54:01.283	127.0.0.1:39768	admin	REQUEST	XQUERY <root>{ let $q := (collection('SpotifyPlaylist')//track/artists/element[id/text() ='5MboRLcEpLbsshOx64OdA6'])[last()] return $q/name }</root>	0.69 ms
+15:54:01.289	127.0.0.1:39768	admin	OK	Query executed in 6.05 ms.	6.56 ms
+15:54:09.041	127.0.0.1:39768	admin	REQUEST	XQUERY <root>{ for $a in collection('SpotifyPlaylist')//element/track[artists/element/id/text()='5MboRLcEpLbsshOx64OdA6'] return <elem> {$a/name} {$a/external_urls/spotify} {($a/album/images/element/url)[last()]} </elem> } </root>	0.41 ms
+15:54:09.054	127.0.0.1:39768	admin	OK	Query executed in 12.48 ms.	12.82 ms
+15:54:09.054	127.0.0.1:39768	admin	REQUEST	XQUERY <root>{ let $q := (collection('SpotifyPlaylist')//track/artists/element[id/text() ='5MboRLcEpLbsshOx64OdA6'])[last()] return $q/name }</root>	0.19 ms
+15:54:09.059	127.0.0.1:39768	admin	OK	Query executed in 4.8 ms.	5.11 ms
+16:05:25.150	127.0.0.1:39768	admin	REQUEST	XQUERY import module namespace funcsPlaylist = 'com.funcsPlaylist.my.index'; funcsPlaylist:musicas()	0.25 ms
+16:05:25.213	127.0.0.1:39768	admin	OK	Query executed in 62.88 ms.	63.38 ms
+16:12:27.469	SERVER	admin	OK	Server was stopped (port: 1984).
+22:05:54.647	SERVER	admin	OK	Server was started (port: 1984).
+22:06:11.738	127.0.0.1:48500	admin	REQUEST	XQUERY import module namespace funcsPlaylist = 'com.funcsPlaylist.my.index'; funcsPlaylist:home()	62.27 ms
+22:06:13.522	127.0.0.1:48500	admin	OK	Query executed in 1775.59 ms.	1780.97 ms
+22:06:14.072	127.0.0.1:48500	admin	REQUEST	XQUERY import module namespace funcsPlaylist = 'com.funcsPlaylist.my.index'; funcsPlaylist:home()	2.87 ms
+22:06:14.212	127.0.0.1:48500	admin	OK	Query executed in 138.67 ms.	140.56 ms
+22:06:21.689	127.0.0.1:48500	admin	REQUEST	XQUERY import module namespace funcsPlaylist = 'com.funcsPlaylist.my.index'; funcsPlaylist:musicas()	1.32 ms
+22:06:21.785	127.0.0.1:48500	admin	OK	Query executed in 93.85 ms.	95.07 ms
+22:06:31.116	127.0.0.1:48500	admin	REQUEST	XQUERY import module namespace funcsPlaylist = 'com.funcsPlaylist.my.index'; funcsPlaylist:info-musica('1iTeTbQNs60GuQ7RHRs3fB')	0.4 ms
+22:06:31.144	127.0.0.1:48500	admin	OK	Query executed in 27.61 ms.	28.29 ms
+22:06:31.145	127.0.0.1:48500	admin	REQUEST	XQUERY import module namespace funcsPlaylist = 'com.funcsPlaylist.my.index'; funcsPlaylist:info-musica('59RzIGDFjculZ2ek1yCzj5')	0.33 ms
+22:06:31.158	127.0.0.1:48500	admin	OK	Query executed in 12.93 ms.	13.46 ms
+22:06:31.495	127.0.0.1:48500	admin	REQUEST	XQUERY let $bs := collection('SpotifyPlaylist') for $b in $bs return insert node <playlistDemo id="1"><nome>teste</nome><id>1</id><numeroDeMusicas>2</numeroDeMusicas><dataCriacao>2020-11-14</dataCriacao><musicas><musica><nome>Pok&#233;mon Gym</nome><id>1iTeTbQNs60GuQ7RHRs3fB</id><externalUrl>https://open.spotify.com/track/1iTeTbQNs60GuQ7RHRs3fB</externalUrl><img>https://i.scdn.co/image/ab67616d000048515557509707f246b85561cd6a</img><artistas><artista><nome>Mikel</nome><id>5MboRLcEpLbsshOx64OdA6</id></artista><artista><nome>GameChops</nome><id>1T7zBkQCOCacKjbnmFX7cp</id></artista></artistas></musica><musica><nome>Route 3</nome><id>59RzIGDFjculZ2ek1yCzj5</id><externalUrl>https://open.spotify.com/track/59RzIGDFjculZ2ek1yCzj5</externalUrl><img>https://i.scdn.co/image/ab67616d0000485144779d08fa85a052a0622be1</img><artistas><artista><nome>Jawnhto</nome><id>1RSiyYMFiqplPSFmkUjU6m</id></artista><artista><nome>Silent Science</nome><id>0YlK29eIT2cwwPIXE9bXLd</id></artista></artistas></musica></mu...	0.94 ms
+22:06:31.500	127.0.0.1:48500	admin	ERROR	Stopped at ., 1/1034: [XUDY0027] Insert target is an empty sequence.	5.07 ms
+22:09:46.647	127.0.0.1:48556	admin	REQUEST	XQUERY import module namespace funcsPlaylist = 'com.funcsPlaylist.my.index'; funcsPlaylist:home()	1.33 ms
+22:09:46.760	127.0.0.1:48556	admin	OK	Query executed in 110.69 ms.	112.32 ms
+22:09:49.650	127.0.0.1:48556	admin	REQUEST	XQUERY import module namespace funcsPlaylist = 'com.funcsPlaylist.my.index'; funcsPlaylist:musicas()	1.06 ms
+22:09:49.750	127.0.0.1:48556	admin	OK	Query executed in 98.01 ms.	99.86 ms
+22:09:57.115	127.0.0.1:48556	admin	REQUEST	XQUERY import module namespace funcsPlaylist = 'com.funcsPlaylist.my.index'; funcsPlaylist:info-musica('1iTeTbQNs60GuQ7RHRs3fB')	0.53 ms
+22:09:57.135	127.0.0.1:48556	admin	OK	Query executed in 19.22 ms.	19.94 ms
+22:09:57.192	127.0.0.1:48556	admin	REQUEST	XQUERY let $bs := collection('SpotifyPlaylist') for $b in $bs return insert node <playlistDemo id="1"><nome>teste</nome><id>1</id><numeroDeMusicas>2</numeroDeMusicas><dataCriacao>2020-11-14</dataCriacao><musicas><musica><nome>Pok&#233;mon Gym</nome><id>1iTeTbQNs60GuQ7RHRs3fB</id><externalUrl>https://open.spotify.com/track/1iTeTbQNs60GuQ7RHRs3fB</externalUrl><img>https://i.scdn.co/image/ab67616d000048515557509707f246b85561cd6a</img><artistas><artista><nome>Mikel</nome><id>5MboRLcEpLbsshOx64OdA6</id></artista><artista><nome>GameChops</nome><id>1T7zBkQCOCacKjbnmFX7cp</id></artista></artistas></musica></musicas></playlistDemo> after $b//playlist	0.56 ms
+22:09:57.195	127.0.0.1:48556	admin	ERROR	Stopped at ., 1/643: [XUDY0027] Insert target is an empty sequence.	2.6 ms
+22:12:14.964	127.0.0.1:48556	admin	REQUEST	XQUERY import module namespace funcsPlaylist = 'com.funcsPlaylist.my.index'; funcsPlaylist:home()	1.34 ms
+22:12:15.032	127.0.0.1:48556	admin	OK	Query executed in 66.02 ms.	67.4 ms
+22:12:17.059	127.0.0.1:48556	admin	REQUEST	XQUERY import module namespace funcsPlaylist = 'com.funcsPlaylist.my.index'; funcsPlaylist:musicas()	0.93 ms
+22:12:17.141	127.0.0.1:48556	admin	OK	Query executed in 80.44 ms.	81.97 ms
+22:12:22.435	127.0.0.1:48556	admin	REQUEST	XQUERY import module namespace funcsPlaylist = 'com.funcsPlaylist.my.index'; funcsPlaylist:info-musica('1iTeTbQNs60GuQ7RHRs3fB')	0.41 ms
+22:12:22.452	127.0.0.1:48556	admin	OK	Query executed in 16.76 ms.	17.39 ms
+22:12:22.455	127.0.0.1:48556	admin	REQUEST	XQUERY let $bs := collection('SpotifyPlaylist') for $b in $bs return insert node <playlistDemo id="1"><nome>teste</nome><id>1</id><numeroDeMusicas>2</numeroDeMusicas><dataCriacao>2020-11-14</dataCriacao><musicas><musica><nome>Pok&#233;mon Gym</nome><id>1iTeTbQNs60GuQ7RHRs3fB</id><externalUrl>https://open.spotify.com/track/1iTeTbQNs60GuQ7RHRs3fB</externalUrl><img>https://i.scdn.co/image/ab67616d000048515557509707f246b85561cd6a</img><artistas><artista><nome>Mikel</nome><id>5MboRLcEpLbsshOx64OdA6</id></artista><artista><nome>GameChops</nome><id>1T7zBkQCOCacKjbnmFX7cp</id></artista></artistas></musica></musicas></playlistDemo> after $b//playlist	0.46 ms
+22:12:22.471	127.0.0.1:48556	admin	ERROR	[db:lock] Database 'SpotifyPlaylist' is currently opened by another process.	16.33 ms
+22:12:44.725	127.0.0.1:48556	admin	REQUEST	XQUERY import module namespace funcsPlaylist = 'com.funcsPlaylist.my.index'; funcsPlaylist:info-musica('1iTeTbQNs60GuQ7RHRs3fB')	1.34 ms
+22:12:44.733	127.0.0.1:48556	admin	OK	Query executed in 7.91 ms.	8.56 ms
+22:12:44.735	127.0.0.1:48556	admin	REQUEST	XQUERY let $bs := collection('SpotifyPlaylist') for $b in $bs return insert node <playlistDemo id="1"><nome>teste</nome><id>1</id><numeroDeMusicas>2</numeroDeMusicas><dataCriacao>2020-11-14</dataCriacao><musicas><musica><nome>Pok&#233;mon Gym</nome><id>1iTeTbQNs60GuQ7RHRs3fB</id><externalUrl>https://open.spotify.com/track/1iTeTbQNs60GuQ7RHRs3fB</externalUrl><img>https://i.scdn.co/image/ab67616d000048515557509707f246b85561cd6a</img><artistas><artista><nome>Mikel</nome><id>5MboRLcEpLbsshOx64OdA6</id></artista><artista><nome>GameChops</nome><id>1T7zBkQCOCacKjbnmFX7cp</id></artista></artistas></musica></musicas></playlistDemo> after $b//playlist	0.67 ms
+22:12:44.750	127.0.0.1:48556	admin	OK	Query executed in 14.36 ms.	15.04 ms
+22:12:44.935	127.0.0.1:48556	admin	REQUEST	XQUERY import module namespace funcsPlaylist = 'com.funcsPlaylist.my.index'; funcsPlaylist:musicas()	0.62 ms
+22:12:45.007	127.0.0.1:48556	admin	OK	Query executed in 70.64 ms.	71.29 ms
+22:12:47.738	127.0.0.1:48556	admin	REQUEST	XQUERY <root>{for $a in collection('SpotifyPlaylist')//playlistDemo return $a }</root>	0.84 ms
+22:12:47.765	127.0.0.1:48556	admin	OK	Query executed in 25.51 ms.	26.77 ms
+22:17:38.142	SERVER	admin	OK	Server was stopped (port: 1984).

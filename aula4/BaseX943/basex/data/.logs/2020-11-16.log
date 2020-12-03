@@ -1,0 +1,42 @@
+17:14:03.645	SERVER	admin	OK	Server was started (port: 1984).
+17:15:13.725	127.0.0.1:57156	admin	REQUEST	XQUERY import module namespace funcsPlaylist = 'com.funcsPlaylist.my.index'; funcsPlaylist:home()	106.09 ms
+17:15:15.350	127.0.0.1:57156	admin	OK	Query executed in 1610.34 ms.	1624.53 ms
+17:15:15.394	127.0.0.1:57156	admin	REQUEST	XQUERY import module namespace funcsPlaylist = 'com.funcsPlaylist.my.index'; funcsPlaylist:home()	1.12 ms
+17:15:15.740	127.0.0.1:57156	admin	OK	Query executed in 344.54 ms.	346.09 ms
+17:17:22.459	127.0.0.1:57156	admin	REQUEST	XQUERY import module namespace funcsPlaylist = 'com.funcsPlaylist.my.index'; funcsPlaylist:home()	1.25 ms
+17:17:22.549	127.0.0.1:57156	admin	OK	Query executed in 88.82 ms.	89.92 ms
+17:23:07.065	127.0.0.1:57210	admin	REQUEST	XQUERY import module namespace funcsPlaylist = 'com.funcsPlaylist.my.index'; funcsPlaylist:home()	0.8 ms
+17:23:07.175	127.0.0.1:57210	admin	OK	Query executed in 103.66 ms.	110.11 ms
+17:23:51.222	127.0.0.1:57210	admin	REQUEST	XQUERY import module namespace funcsPlaylist = 'com.funcsPlaylist.my.index'; funcsPlaylist:home()	0.71 ms
+17:23:51.285	127.0.0.1:57210	admin	OK	Query executed in 62.44 ms.	63.54 ms
+17:23:54.452	127.0.0.1:57210	admin	REQUEST	XQUERY import module namespace funcsPlaylist = 'com.funcsPlaylist.my.index'; funcsPlaylist:home()	1.42 ms
+17:23:54.538	127.0.0.1:57210	admin	OK	Query executed in 85.1 ms.	86.34 ms
+17:24:20.587	127.0.0.1:57210	admin	REQUEST	XQUERY import module namespace funcsPlaylist = 'com.funcsPlaylist.my.index'; funcsPlaylist:home()	0.78 ms
+17:24:20.641	127.0.0.1:57210	admin	OK	Query executed in 52.81 ms.	53.92 ms
+17:25:14.987	127.0.0.1:57210	admin	REQUEST	XQUERY import module namespace funcsPlaylist = 'com.funcsPlaylist.my.index'; funcsPlaylist:home()	0.65 ms
+17:25:15.028	127.0.0.1:57210	admin	OK	Query executed in 40.03 ms.	41.0 ms
+17:25:55.216	127.0.0.1:57210	admin	REQUEST	XQUERY import module namespace funcsPlaylist = 'com.funcsPlaylist.my.index'; funcsPlaylist:home()	0.5 ms
+17:25:55.266	127.0.0.1:57210	admin	OK	Query executed in 49.68 ms.	50.55 ms
+17:26:07.978	127.0.0.1:57210	admin	REQUEST	XQUERY import module namespace funcsPlaylist = 'com.funcsPlaylist.my.index'; funcsPlaylist:home()	0.68 ms
+17:26:08.003	127.0.0.1:57210	admin	OK	Query executed in 25.22 ms.	25.89 ms
+17:26:31.508	127.0.0.1:57210	admin	REQUEST	XQUERY import module namespace funcsPlaylist = 'com.funcsPlaylist.my.index'; funcsPlaylist:home()	2.14 ms
+17:26:31.577	127.0.0.1:57210	admin	OK	Query executed in 67.43 ms.	69.05 ms
+17:26:38.337	127.0.0.1:57210	admin	REQUEST	XQUERY import module namespace funcsPlaylist = 'com.funcsPlaylist.my.index'; funcsPlaylist:home()	0.54 ms
+17:26:38.368	127.0.0.1:57210	admin	OK	Query executed in 30.04 ms.	30.71 ms
+17:26:44.649	127.0.0.1:57210	admin	REQUEST	XQUERY import module namespace funcsPlaylist = 'com.funcsPlaylist.my.index'; funcsPlaylist:home()	0.64 ms
+17:26:44.703	127.0.0.1:57210	admin	OK	Query executed in 53.47 ms.	54.21 ms
+17:26:50.486	127.0.0.1:57210	admin	REQUEST	XQUERY import module namespace funcsPlaylist = 'com.funcsPlaylist.my.index'; funcsPlaylist:home()	0.51 ms
+17:26:50.532	127.0.0.1:57210	admin	OK	Query executed in 45.14 ms.	46.02 ms
+17:27:02.388	127.0.0.1:57210	admin	REQUEST	XQUERY import module namespace funcsPlaylist = 'com.funcsPlaylist.my.index'; funcsPlaylist:home()	1.15 ms
+17:27:02.462	127.0.0.1:57210	admin	OK	Query executed in 72.83 ms.	74.18 ms
+17:27:11.392	127.0.0.1:57210	admin	REQUEST	XQUERY import module namespace funcsPlaylist = 'com.funcsPlaylist.my.index'; funcsPlaylist:home()	0.91 ms
+17:27:11.417	127.0.0.1:57210	admin	OK	Query executed in 23.87 ms.	24.86 ms
+17:27:54.808	127.0.0.1:57210	admin	REQUEST	XQUERY import module namespace funcsPlaylist = 'com.funcsPlaylist.my.index'; funcsPlaylist:home()	0.96 ms
+17:27:54.835	127.0.0.1:57210	admin	OK	Query executed in 26.04 ms.	26.86 ms
+17:28:01.999	127.0.0.1:57210	admin	REQUEST	XQUERY import module namespace funcsPlaylist = 'com.funcsPlaylist.my.index'; funcsPlaylist:home()	1.01 ms
+17:28:02.054	127.0.0.1:57210	admin	OK	Query executed in 54.36 ms.	55.79 ms
+17:28:08.275	127.0.0.1:57210	admin	REQUEST	XQUERY import module namespace funcsPlaylist = 'com.funcsPlaylist.my.index'; funcsPlaylist:home()	0.61 ms
+17:28:08.299	127.0.0.1:57210	admin	OK	Query executed in 22.38 ms.	23.41 ms
+17:28:14.268	127.0.0.1:57210	admin	REQUEST	XQUERY import module namespace funcsPlaylist = 'com.funcsPlaylist.my.index'; funcsPlaylist:home()	1.03 ms
+17:28:14.329	127.0.0.1:57210	admin	OK	Query executed in 59.01 ms.	60.47 ms
+17:28:28.974	SERVER	admin	OK	Server was stopped (port: 1984).

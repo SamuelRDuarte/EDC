@@ -1,0 +1,110 @@
+15:07:50.076	SERVER	admin	OK	Server was started (port: 1984).
+15:28:27.490	127.0.0.1:43400	admin	REQUEST	XQUERY <root>{ for $a in collection('SpotifyPlaylist')//element/track return <elem> {$a/name} {$a/external_urls/spotify} {$a/album/images/element/url} { for $b in $a/artists/element return <artista> {$b/name} {$b/id} </artista> } </elem> } </root>	67.03 ms
+15:28:29.805	127.0.0.1:43400	admin	OK	Query executed in 2302.4 ms.	2315.0 ms
+15:28:34.977	127.0.0.1:43400	admin	REQUEST	XQUERY <root>{ for $a in distinct-values(collection('SpotifyPlaylist')//track/artists/element/name) let $b := (collection('SpotifyPlaylist')//track/artists/element[name = $a])[1] return<artista>{$b/href} {$b/id} {$b/name}</artista>}</root>	1.04 ms
+15:28:35.086	127.0.0.1:43400	admin	OK	Query executed in 107.66 ms.	109.41 ms
+15:49:42.890	127.0.0.1:53444	admin	REQUEST	XQUERY <root>{ for $a in distinct-values(collection('SpotifyPlaylist')//track/artists/element/name) let $b := (collection('SpotifyPlaylist')//track/artists/element[name = $a])[1] return<artista>{$b/href} {$b/id} {$b/name}</artista>}</root>	0.84 ms
+15:49:43.213	127.0.0.1:53444	admin	OK	Query executed in 321.41 ms.	322.75 ms
+15:49:43.449	127.0.0.1:53444	admin	REQUEST	import module namespace funcsPlaylist = 'com.funcsPlaylist.my.index'; funcsPlaylist:insert-imagem-artista('5MboRLcEpLbsshOx64OdA6','https://i.scdn.co/image/bb79c62c56f66fcda31b04d53a66d69dc7741b5c')	4.53 ms
+15:49:43.449	127.0.0.1:53444	admin	ERROR	Stopped at , 1/7: Unknown command: import. Try 'help'.	0.12 ms
+15:50:09.748	127.0.0.1:53608	admin	REQUEST	XQUERY <root>{ for $a in distinct-values(collection('SpotifyPlaylist')//track/artists/element/name) let $b := (collection('SpotifyPlaylist')//track/artists/element[name = $a])[1] return<artista>{$b/href} {$b/id} {$b/name}</artista>}</root>	0.74 ms
+15:50:09.961	127.0.0.1:53608	admin	OK	Query executed in 211.75 ms.	212.82 ms
+15:50:10.226	127.0.0.1:53608	admin	REQUEST	XQUERY import module namespace funcsPlaylist = 'com.funcsPlaylist.my.index'; funcsPlaylist:insert-imagem-artista('5MboRLcEpLbsshOx64OdA6','https://i.scdn.co/image/bb79c62c56f66fcda31b04d53a66d69dc7741b5c')	0.68 ms
+15:50:10.294	127.0.0.1:53608	admin	ERROR	[db:lock] Database 'SpotifyPlaylist' is currently opened by another process.	68.17 ms
+15:50:37.066	127.0.0.1:53608	admin	REQUEST	XQUERY <root>{ for $a in distinct-values(collection('SpotifyPlaylist')//track/artists/element/name) let $b := (collection('SpotifyPlaylist')//track/artists/element[name = $a])[1] return<artista>{$b/href} {$b/id} {$b/name}</artista>}</root>	1.5 ms
+15:50:37.260	127.0.0.1:53608	admin	OK	Query executed in 192.65 ms.	193.36 ms
+15:50:37.515	127.0.0.1:53608	admin	REQUEST	XQUERY import module namespace funcsPlaylist = 'com.funcsPlaylist.my.index'; funcsPlaylist:insert-imagem-artista('5MboRLcEpLbsshOx64OdA6','https://i.scdn.co/image/bb79c62c56f66fcda31b04d53a66d69dc7741b5c')	0.61 ms
+15:50:37.573	127.0.0.1:53608	admin	OK	Query executed in 57.8 ms.	58.68 ms
+15:50:37.712	127.0.0.1:53608	admin	REQUEST	XQUERY import module namespace funcsPlaylist = 'com.funcsPlaylist.my.index'; funcsPlaylist:insert-imagem-artista('1T7zBkQCOCacKjbnmFX7cp','https://i.scdn.co/image/0abe7204c24828c5fbdb0fe5576462e10078546d')	0.52 ms
+15:50:37.737	127.0.0.1:53608	admin	OK	Query executed in 23.99 ms.	24.63 ms
+15:50:37.843	127.0.0.1:53608	admin	REQUEST	XQUERY import module namespace funcsPlaylist = 'com.funcsPlaylist.my.index'; funcsPlaylist:insert-imagem-artista('0X1wtVNo8CVrMEKh8y8knH','https://i.scdn.co/image/d4d502df7b3bb78b68ef154cb889e5c9b054c364')	0.48 ms
+15:50:37.867	127.0.0.1:53608	admin	OK	Query executed in 22.77 ms.	23.37 ms
+15:50:37.968	127.0.0.1:53608	admin	REQUEST	XQUERY import module namespace funcsPlaylist = 'com.funcsPlaylist.my.index'; funcsPlaylist:insert-imagem-artista('4dR6GXV8DO4FOwHZyu8MEq','https://i.scdn.co/image/95c82253c6a5cbc50350e27736b590b782413645')	0.57 ms
+15:50:37.998	127.0.0.1:53608	admin	OK	Query executed in 28.97 ms.	29.69 ms
+15:50:38.110	127.0.0.1:53608	admin	REQUEST	XQUERY import module namespace funcsPlaylist = 'com.funcsPlaylist.my.index'; funcsPlaylist:insert-imagem-artista('7IoIc5NX5MAE0SVAknNnIJ','https://i.scdn.co/image/0e82d386382dd486098f4743cb3d69bdf46617e3')	0.4 ms
+15:50:38.125	127.0.0.1:53608	admin	OK	Query executed in 13.74 ms.	14.33 ms
+15:50:38.232	127.0.0.1:53608	admin	REQUEST	XQUERY import module namespace funcsPlaylist = 'com.funcsPlaylist.my.index'; funcsPlaylist:insert-imagem-artista('31Cf1kpnuoNrrMvX87ptet','https://i.scdn.co/image/70b887f1d7ef900e32714ad05f39c3723892358b')	0.45 ms
+15:50:38.244	127.0.0.1:53608	admin	OK	Query executed in 11.6 ms.	14.49 ms
+15:50:38.360	127.0.0.1:53608	admin	REQUEST	XQUERY import module namespace funcsPlaylist = 'com.funcsPlaylist.my.index'; funcsPlaylist:insert-imagem-artista('6doBPcAt2vxQmvbcmNxMmc','https://i.scdn.co/image/8f5cab777e3f71356ecdb920fe96190868d62f57')	0.81 ms
+15:50:38.380	127.0.0.1:53608	admin	OK	Query executed in 18.8 ms.	19.97 ms
+15:50:38.513	127.0.0.1:53608	admin	REQUEST	XQUERY import module namespace funcsPlaylist = 'com.funcsPlaylist.my.index'; funcsPlaylist:insert-imagem-artista('0LzeyDrlLtuyBqMSBN4z3U','https://i.scdn.co/image/367adc7d1dfc1f942414d38b132485be60f0d07a')	0.42 ms
+15:50:38.528	127.0.0.1:53608	admin	OK	Query executed in 14.84 ms.	15.37 ms
+15:50:38.643	127.0.0.1:53608	admin	REQUEST	XQUERY import module namespace funcsPlaylist = 'com.funcsPlaylist.my.index'; funcsPlaylist:insert-imagem-artista('62GoYifV4njTdvS8lD2yYT','https://i.scdn.co/image/a1310dfe2eb0cdb71f367f27626ae440ab6c0fc4')	0.42 ms
+15:50:38.660	127.0.0.1:53608	admin	OK	Query executed in 16.54 ms.	17.26 ms
+15:50:38.766	127.0.0.1:53608	admin	REQUEST	XQUERY import module namespace funcsPlaylist = 'com.funcsPlaylist.my.index'; funcsPlaylist:insert-imagem-artista('1IwzmBTWI4CzUNsZM7Zqd8','https://i.scdn.co/image/17fc70b50f1d2b30c67b3e13d9b799ba1294706d')	0.6 ms
+15:50:38.776	127.0.0.1:53608	admin	OK	Query executed in 9.81 ms.	10.68 ms
+15:50:38.887	127.0.0.1:53608	admin	REQUEST	XQUERY import module namespace funcsPlaylist = 'com.funcsPlaylist.my.index'; funcsPlaylist:insert-imagem-artista('1Bk5QRKPcjeDSZS6M75Q8z','https://i.scdn.co/image/2548d911ccf9f15be84011a363fc32c50673acb1')	0.51 ms
+15:50:38.903	127.0.0.1:53608	admin	OK	Query executed in 15.4 ms.	16.01 ms
+15:50:39.013	127.0.0.1:53608	admin	REQUEST	XQUERY import module namespace funcsPlaylist = 'com.funcsPlaylist.my.index'; funcsPlaylist:insert-imagem-artista('13YD4KsI3674BRH9k7vn7m','https://i.scdn.co/image/f52e1f2cbe26541f804aa4fa28b3b13e62d01b43')	0.41 ms
+15:50:39.035	127.0.0.1:53608	admin	OK	Query executed in 17.82 ms.	22.45 ms
+15:50:39.155	127.0.0.1:53608	admin	REQUEST	XQUERY import module namespace funcsPlaylist = 'com.funcsPlaylist.my.index'; funcsPlaylist:insert-imagem-artista('3nCJkmgdZQ6l8o828Y3vNQ','https://i.scdn.co/image/d532d5776c39ea1b543e06f31f6e3aa71680bd60')	0.44 ms
+15:50:39.172	127.0.0.1:53608	admin	OK	Query executed in 16.32 ms.	17.15 ms
+15:50:39.288	127.0.0.1:53608	admin	REQUEST	XQUERY import module namespace funcsPlaylist = 'com.funcsPlaylist.my.index'; funcsPlaylist:insert-imagem-artista('33YwE27uFjLjx0lAusgLYE','https://i.scdn.co/image/dc927fd84559dde001060f988b83e029764ab5a9')	0.4 ms
+15:50:39.310	127.0.0.1:53608	admin	OK	Query executed in 20.68 ms.	21.61 ms
+15:50:39.432	127.0.0.1:53608	admin	REQUEST	XQUERY import module namespace funcsPlaylist = 'com.funcsPlaylist.my.index'; funcsPlaylist:insert-imagem-artista('6xMMOflXnoIA3grU3seMjh','https://i.scdn.co/image/b9f6194498299dea6bc0440fa94654f382c9522b')	0.47 ms
+15:50:39.443	127.0.0.1:53608	admin	OK	Query executed in 10.5 ms.	11.14 ms
+15:50:39.565	127.0.0.1:53608	admin	REQUEST	XQUERY import module namespace funcsPlaylist = 'com.funcsPlaylist.my.index'; funcsPlaylist:insert-imagem-artista('4M4gexhCyv12RmbowD8xjS','https://i.scdn.co/image/e531fb60ef83d61badc25a1fa1386d0f44387f58')	0.47 ms
+15:50:39.578	127.0.0.1:53608	admin	OK	Query executed in 11.8 ms.	12.71 ms
+15:50:39.693	127.0.0.1:53608	admin	REQUEST	XQUERY import module namespace funcsPlaylist = 'com.funcsPlaylist.my.index'; funcsPlaylist:insert-imagem-artista('6wM3tYsLm3LMfEKIkl5SmY','https://i.scdn.co/image/befa68e650fe3f821cdacc647fbc2edcaaa14e66')	0.53 ms
+15:50:39.713	127.0.0.1:53608	admin	OK	Query executed in 18.83 ms.	19.79 ms
+15:50:39.824	127.0.0.1:53608	admin	REQUEST	XQUERY import module namespace funcsPlaylist = 'com.funcsPlaylist.my.index'; funcsPlaylist:insert-imagem-artista('1pYfLGXAVd7pEvLlbKJV0S','https://i.scdn.co/image/780040649671898a4d36744b29ff2b7f39e15b1f')	0.7 ms
+15:50:39.846	127.0.0.1:53608	admin	OK	Query executed in 21.13 ms.	21.91 ms
+15:50:39.948	127.0.0.1:53608	admin	REQUEST	XQUERY import module namespace funcsPlaylist = 'com.funcsPlaylist.my.index'; funcsPlaylist:insert-imagem-artista('6gWGD0yeQYobb2sq0LUr7k','https://i.scdn.co/image/5232763a99aa2760ca436d574bfd9a1c98d0fe3f')	0.39 ms
+15:50:39.964	127.0.0.1:53608	admin	OK	Query executed in 15.51 ms.	16.29 ms
+15:50:40.077	127.0.0.1:53608	admin	REQUEST	XQUERY import module namespace funcsPlaylist = 'com.funcsPlaylist.my.index'; funcsPlaylist:insert-imagem-artista('2n0sjgdrfHYJT6B39cdvWW','https://i.scdn.co/image/3465aa8f13bc3a6352db92f5a79568ff3f89b766')	1.3 ms
+15:50:40.090	127.0.0.1:53608	admin	OK	Query executed in 11.8 ms.	12.42 ms
+15:50:40.234	127.0.0.1:53608	admin	REQUEST	XQUERY import module namespace funcsPlaylist = 'com.funcsPlaylist.my.index'; funcsPlaylist:insert-imagem-artista('1RSiyYMFiqplPSFmkUjU6m','https://i.scdn.co/image/a1e9b469529fbfde96460595a241655c5c303438')	0.55 ms
+15:50:40.245	127.0.0.1:53608	admin	OK	Query executed in 10.58 ms.	11.22 ms
+15:50:40.370	127.0.0.1:53608	admin	REQUEST	XQUERY import module namespace funcsPlaylist = 'com.funcsPlaylist.my.index'; funcsPlaylist:insert-imagem-artista('4GGm7CoOaCNFLMnFInNiMG','https://i.scdn.co/image/d9fa3ead4bf202ea63a974d63ee81432cf663b12')	0.83 ms
+15:50:40.382	127.0.0.1:53608	admin	OK	Query executed in 10.69 ms.	11.4 ms
+15:50:40.508	127.0.0.1:53608	admin	REQUEST	XQUERY import module namespace funcsPlaylist = 'com.funcsPlaylist.my.index'; funcsPlaylist:insert-imagem-artista('1oyiOfYXixQ0YllgqgXt9k','https://i.scdn.co/image/874f88e96769f880bbc1db8819a207614be029ed')	0.67 ms
+15:50:40.526	127.0.0.1:53608	admin	OK	Query executed in 17.17 ms.	17.79 ms
+15:50:40.642	127.0.0.1:53608	admin	REQUEST	XQUERY import module namespace funcsPlaylist = 'com.funcsPlaylist.my.index'; funcsPlaylist:insert-imagem-artista('5iizKY32uh2DjvhBAatfOK','https://i.scdn.co/image/ab67616d0000b2736290e664ea3d708b145bf548')	0.88 ms
+15:50:40.658	127.0.0.1:53608	admin	OK	Query executed in 14.58 ms.	15.26 ms
+15:50:40.793	127.0.0.1:53608	admin	REQUEST	XQUERY import module namespace funcsPlaylist = 'com.funcsPlaylist.my.index'; funcsPlaylist:insert-imagem-artista('4MlfQhZU7EwjQ1RxXioMkn','https://i.scdn.co/image/733d707fa4e1f382006068be3bf01be84f8fafce')	0.47 ms
+15:50:40.810	127.0.0.1:53608	admin	OK	Query executed in 16.45 ms.	16.98 ms
+15:50:40.915	127.0.0.1:53608	admin	REQUEST	XQUERY import module namespace funcsPlaylist = 'com.funcsPlaylist.my.index'; funcsPlaylist:insert-imagem-artista('6fs2SodTrhCfDJYLbJDg0w','https://i.scdn.co/image/c73a4c036a8a807b61653c632110851edb9b02da')	0.44 ms
+15:50:40.926	127.0.0.1:53608	admin	OK	Query executed in 10.33 ms.	10.85 ms
+15:50:41.040	127.0.0.1:53608	admin	REQUEST	XQUERY import module namespace funcsPlaylist = 'com.funcsPlaylist.my.index'; funcsPlaylist:insert-imagem-artista('5eGhTguFFJAbGPh6YfsBDa','https://i.scdn.co/image/b2b087cdb0d7dd3c35297889b1c601b28c1d5cda')	0.49 ms
+15:50:41.056	127.0.0.1:53608	admin	OK	Query executed in 15.74 ms.	16.43 ms
+15:50:41.172	127.0.0.1:53608	admin	REQUEST	XQUERY import module namespace funcsPlaylist = 'com.funcsPlaylist.my.index'; funcsPlaylist:insert-imagem-artista('1AILAN8RzQ9WYweBqYmRx5','https://i.scdn.co/image/ab67616d0000b2737d92a7b081f16384dfc13464')	0.36 ms
+15:50:41.185	127.0.0.1:53608	admin	OK	Query executed in 12.35 ms.	12.99 ms
+15:50:41.303	127.0.0.1:53608	admin	REQUEST	XQUERY import module namespace funcsPlaylist = 'com.funcsPlaylist.my.index'; funcsPlaylist:insert-imagem-artista('0W6oGpAPJQNSqs66EH9tLy','https://i.scdn.co/image/1abeab9fb8ac49bf0e96d49b0e37cd101be09b42')	0.34 ms
+15:50:41.321	127.0.0.1:53608	admin	OK	Query executed in 15.95 ms.	17.34 ms
+15:50:41.427	127.0.0.1:53608	admin	REQUEST	XQUERY import module namespace funcsPlaylist = 'com.funcsPlaylist.my.index'; funcsPlaylist:insert-imagem-artista('3H1hzWoTi6C6VY7oZnRKW1','https://i.scdn.co/image/3f76547272008a62f6c9b16d736118b2a4928501')	0.55 ms
+15:50:41.443	127.0.0.1:53608	admin	OK	Query executed in 15.58 ms.	16.23 ms
+15:50:41.578	127.0.0.1:53608	admin	REQUEST	XQUERY import module namespace funcsPlaylist = 'com.funcsPlaylist.my.index'; funcsPlaylist:insert-imagem-artista('6TeBxtluBMQixZcKkJ3ZrB','https://i.scdn.co/image/5af650f95d5c94d8618e027aea49becc14dba41b')	1.29 ms
+15:50:41.630	127.0.0.1:53608	admin	OK	Query executed in 50.74 ms.	51.97 ms
+15:50:41.739	127.0.0.1:53608	admin	REQUEST	XQUERY import module namespace funcsPlaylist = 'com.funcsPlaylist.my.index'; funcsPlaylist:insert-imagem-artista('2dB3VxAmEw5Dqewiha1oO1','https://i.scdn.co/image/9647871ac0c23e5b3623ff9925e87ae57a5a68e5')	0.35 ms
+15:50:41.749	127.0.0.1:53608	admin	OK	Query executed in 9.62 ms.	10.21 ms
+15:50:41.859	127.0.0.1:53608	admin	REQUEST	XQUERY import module namespace funcsPlaylist = 'com.funcsPlaylist.my.index'; funcsPlaylist:insert-imagem-artista('0YlK29eIT2cwwPIXE9bXLd','https://i.scdn.co/image/6f37fb30534a31dbcf5b75751ea3eccc696d21a4')	0.51 ms
+15:50:41.880	127.0.0.1:53608	admin	OK	Query executed in 16.08 ms.	21.19 ms
+15:53:05.249	127.0.0.1:53704	admin	REQUEST	XQUERY <root>{ for $a in distinct-values(collection('SpotifyPlaylist')//track/artists/element/name) let $b := (collection('SpotifyPlaylist')//track/artists/element[name = $a])[1] return<artista>{$b/href} {$b/id} {$b/name}</artista>}</root>	0.41 ms
+15:53:05.421	127.0.0.1:53704	admin	OK	Query executed in 171.24 ms.	172.07 ms
+15:53:53.002	127.0.0.1:53718	admin	REQUEST	XQUERY import module namespace funcsPlaylist = 'com.funcsPlaylist.my.index'; funcsPlaylist:buscar-artistas()	1.23 ms
+15:53:53.203	127.0.0.1:53718	admin	OK	Query executed in 199.97 ms.	200.69 ms
+15:56:27.316	127.0.0.1:53726	admin	REQUEST	XQUERY import module namespace funcsPlaylist = 'com.funcsPlaylist.my.index'; funcsPlaylist:buscar-artistas()	0.42 ms
+15:56:27.493	127.0.0.1:53726	admin	OK	Query executed in 176.74 ms.	177.58 ms
+15:56:32.078	127.0.0.1:53726	admin	REQUEST	XQUERY <root>{ for $a in collection('SpotifyPlaylist')//element/track[artists/element/id/text()='5MboRLcEpLbsshOx64OdA6'] return <elem> {$a/name} {$a/external_urls/spotify} {($a/album/images/element/url)[last()]} </elem> } </root>	0.84 ms
+15:56:32.129	127.0.0.1:53726	admin	OK	Query executed in 51.22 ms.	51.91 ms
+15:56:32.131	127.0.0.1:53726	admin	REQUEST	XQUERY <root>{ let $q := (collection('SpotifyPlaylist')//track/artists/element[id/text() ='5MboRLcEpLbsshOx64OdA6'])[last()] return $q/name }</root>	1.08 ms
+15:56:32.148	127.0.0.1:53726	admin	OK	Query executed in 15.73 ms.	16.3 ms
+15:56:39.281	127.0.0.1:53726	admin	REQUEST	XQUERY import module namespace funcsPlaylist = 'com.funcsPlaylist.my.index'; funcsPlaylist:buscar-artistas()	0.47 ms
+15:56:39.466	127.0.0.1:53726	admin	OK	Query executed in 184.71 ms.	185.59 ms
+15:56:40.975	127.0.0.1:53726	admin	REQUEST	XQUERY import module namespace funcsPlaylist = 'com.funcsPlaylist.my.index'; funcsPlaylist:buscar-artistas()	0.51 ms
+15:56:41.201	127.0.0.1:53726	admin	OK	Query executed in 225.47 ms.	226.23 ms
+15:56:42.665	127.0.0.1:53726	admin	REQUEST	XQUERY <root>{ for $a in collection('SpotifyPlaylist')//element/track return <elem> {$a/name} {$a/external_urls/spotify} {$a/album/images/element/url} { for $b in $a/artists/element return <artista> {$b/name} {$b/id} </artista> } </elem> } </root>	0.66 ms
+15:56:42.722	127.0.0.1:53726	admin	OK	Query executed in 55.68 ms.	56.26 ms
+15:56:43.779	127.0.0.1:53726	admin	REQUEST	XQUERY import module namespace funcsPlaylist = 'com.funcsPlaylist.my.index'; funcsPlaylist:buscar-artistas()	0.36 ms
+15:56:43.967	127.0.0.1:53726	admin	OK	Query executed in 186.46 ms.	187.31 ms
+15:56:47.065	127.0.0.1:53726	admin	REQUEST	XQUERY <root>{ for $a in collection('SpotifyPlaylist')//element/track[artists/element/id/text()='5MboRLcEpLbsshOx64OdA6'] return <elem> {$a/name} {$a/external_urls/spotify} {($a/album/images/element/url)[last()]} </elem> } </root>	1.25 ms
+15:56:47.089	127.0.0.1:53726	admin	OK	Query executed in 20.0 ms.	27.54 ms
+15:56:47.094	127.0.0.1:53726	admin	REQUEST	XQUERY <root>{ let $q := (collection('SpotifyPlaylist')//track/artists/element[id/text() ='5MboRLcEpLbsshOx64OdA6'])[last()] return $q/name }</root>	0.86 ms
+15:56:47.107	127.0.0.1:53726	admin	OK	Query executed in 12.25 ms.	12.79 ms
+16:07:49.051	127.0.0.1:53792	admin	REQUEST	XQUERY import module namespace funcsPlaylist = 'com.funcsPlaylist.my.index'; funcsPlaylist:home()	0.47 ms
+16:07:49.080	127.0.0.1:53792	admin	OK	Query executed in 28.56 ms.	29.11 ms
+16:07:55.295	127.0.0.1:53792	admin	REQUEST	XQUERY import module namespace funcsPlaylist = 'com.funcsPlaylist.my.index'; funcsPlaylist:musicas()	0.37 ms
+16:07:55.329	127.0.0.1:53792	admin	OK	Query executed in 33.61 ms.	34.26 ms
+16:08:22.180	127.0.0.1:53792	admin	REQUEST	XQUERY import module namespace funcsPlaylist = 'com.funcsPlaylist.my.index'; funcsPlaylist:buscar-artistas()	0.42 ms
+16:08:22.391	127.0.0.1:53792	admin	OK	Query executed in 210.34 ms.	211.22 ms
+16:09:23.032	SERVER	admin	OK	Server was stopped (port: 1984).

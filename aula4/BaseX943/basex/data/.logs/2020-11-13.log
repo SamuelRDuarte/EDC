@@ -1,0 +1,98 @@
+17:36:19.152	SERVER	admin	OK	Server was started (port: 1984).
+17:55:46.183	127.0.0.1:47750	admin	REQUEST	XQUERY import module namespace funcsPlaylist = 'com.funcsPlaylist.my.index'; funcsPlaylist:home()	107.06 ms
+17:55:48.895	127.0.0.1:47750	admin	OK	Query executed in 2705.96 ms.	2711.85 ms
+17:56:28.752	127.0.0.1:47750	admin	REQUEST	XQUERY import module namespace funcsPlaylist = 'com.funcsPlaylist.my.index'; funcsPlaylist:musicas()	2.04 ms
+17:56:28.926	127.0.0.1:47750	admin	OK	Query executed in 172.64 ms.	173.91 ms
+17:57:14.996	127.0.0.1:47824	admin	REQUEST	XQUERY import module namespace funcsPlaylist = 'com.funcsPlaylist.my.index'; funcsPlaylist:info-musica('1iTeTbQNs60GuQ7RHRs3fB')	1.58 ms
+17:57:15.059	127.0.0.1:47824	admin	OK	Query executed in 62.01 ms.	63.51 ms
+17:57:51.011	127.0.0.1:47838	admin	REQUEST	XQUERY import module namespace funcsPlaylist = 'com.funcsPlaylist.my.index'; funcsPlaylist:info-musica('1iTeTbQNs60GuQ7RHRs3fB')	0.65 ms
+17:57:51.052	127.0.0.1:47838	admin	OK	Query executed in 39.86 ms.	41.82 ms
+17:58:41.702	127.0.0.1:47862	admin	REQUEST	XQUERY import module namespace funcsPlaylist = 'com.funcsPlaylist.my.index'; funcsPlaylist:info-musica('1iTeTbQNs60GuQ7RHRs3fB')	1.64 ms
+17:58:41.754	127.0.0.1:47862	admin	OK	Query executed in 50.73 ms.	52.29 ms
+17:59:47.838	127.0.0.1:47894	admin	REQUEST	XQUERY import module namespace funcsPlaylist = 'com.funcsPlaylist.my.index'; funcsPlaylist:info-musica('1iTeTbQNs60GuQ7RHRs3fB')	1.53 ms
+17:59:47.921	127.0.0.1:47894	admin	OK	Query executed in 81.13 ms.	82.87 ms
+17:59:47.924	127.0.0.1:47894	admin	REQUEST	XQUERY import module namespace funcsPlaylist = 'com.funcsPlaylist.my.index'; funcsPlaylist:info-musica('59RzIGDFjculZ2ek1yCzj5')	0.75 ms
+17:59:47.953	127.0.0.1:47894	admin	OK	Query executed in 28.04 ms.	29.09 ms
+18:01:04.267	127.0.0.1:47930	admin	REQUEST	XQUERY import module namespace funcsPlaylist = 'com.funcsPlaylist.my.index'; funcsPlaylist:info-musica('1iTeTbQNs60GuQ7RHRs3fB')	1.33 ms
+18:01:04.338	127.0.0.1:47930	admin	OK	Query executed in 69.73 ms.	71.31 ms
+18:01:04.339	127.0.0.1:47930	admin	REQUEST	XQUERY import module namespace funcsPlaylist = 'com.funcsPlaylist.my.index'; funcsPlaylist:info-musica('59RzIGDFjculZ2ek1yCzj5')	0.65 ms
+18:01:04.370	127.0.0.1:47930	admin	OK	Query executed in 29.39 ms.	30.27 ms
+18:01:31.263	127.0.0.1:47946	admin	REQUEST	XQUERY import module namespace funcsPlaylist = 'com.funcsPlaylist.my.index'; funcsPlaylist:info-musica('1iTeTbQNs60GuQ7RHRs3fB')	0.65 ms
+18:01:31.295	127.0.0.1:47946	admin	OK	Query executed in 30.9 ms.	31.86 ms
+18:01:31.296	127.0.0.1:47946	admin	REQUEST	XQUERY import module namespace funcsPlaylist = 'com.funcsPlaylist.my.index'; funcsPlaylist:info-musica('59RzIGDFjculZ2ek1yCzj5')	0.56 ms
+18:01:31.326	127.0.0.1:47946	admin	OK	Query executed in 29.1 ms.	30.05 ms
+18:02:16.986	127.0.0.1:47968	admin	REQUEST	XQUERY import module namespace funcsPlaylist = 'com.funcsPlaylist.my.index'; funcsPlaylist:info-musica('1iTeTbQNs60GuQ7RHRs3fB')	2.23 ms
+18:02:17.050	127.0.0.1:47968	admin	OK	Query executed in 62.64 ms.	63.81 ms
+18:02:17.054	127.0.0.1:47968	admin	REQUEST	XQUERY import module namespace funcsPlaylist = 'com.funcsPlaylist.my.index'; funcsPlaylist:info-musica('59RzIGDFjculZ2ek1yCzj5')	0.82 ms
+18:02:17.083	127.0.0.1:47968	admin	OK	Query executed in 27.31 ms.	28.71 ms
+18:02:47.627	127.0.0.1:47986	admin	REQUEST	XQUERY import module namespace funcsPlaylist = 'com.funcsPlaylist.my.index'; funcsPlaylist:info-musica('1iTeTbQNs60GuQ7RHRs3fB')	1.3 ms
+18:02:47.657	127.0.0.1:47986	admin	OK	Query executed in 28.91 ms.	30.79 ms
+18:02:47.671	127.0.0.1:47986	admin	REQUEST	XQUERY import module namespace funcsPlaylist = 'com.funcsPlaylist.my.index'; funcsPlaylist:info-musica('59RzIGDFjculZ2ek1yCzj5')	0.73 ms
+18:02:47.713	127.0.0.1:47986	admin	OK	Query executed in 40.49 ms.	42.07 ms
+18:03:20.106	127.0.0.1:48004	admin	REQUEST	XQUERY import module namespace funcsPlaylist = 'com.funcsPlaylist.my.index'; funcsPlaylist:info-musica('1iTeTbQNs60GuQ7RHRs3fB')	0.54 ms
+18:03:20.133	127.0.0.1:48004	admin	OK	Query executed in 25.42 ms.	27.13 ms
+18:03:20.136	127.0.0.1:48004	admin	REQUEST	XQUERY import module namespace funcsPlaylist = 'com.funcsPlaylist.my.index'; funcsPlaylist:info-musica('59RzIGDFjculZ2ek1yCzj5')	1.03 ms
+18:03:20.163	127.0.0.1:48004	admin	OK	Query executed in 25.93 ms.	26.92 ms
+18:04:38.169	127.0.0.1:48036	admin	REQUEST	XQUERY import module namespace funcsPlaylist = 'com.funcsPlaylist.my.index'; funcsPlaylist:info-musica('1iTeTbQNs60GuQ7RHRs3fB')	2.03 ms
+18:04:38.227	127.0.0.1:48036	admin	OK	Query executed in 55.71 ms.	57.76 ms
+18:04:38.230	127.0.0.1:48036	admin	REQUEST	XQUERY import module namespace funcsPlaylist = 'com.funcsPlaylist.my.index'; funcsPlaylist:info-musica('59RzIGDFjculZ2ek1yCzj5')	0.55 ms
+18:04:38.259	127.0.0.1:48036	admin	OK	Query executed in 28.45 ms.	29.39 ms
+18:05:33.313	127.0.0.1:48062	admin	REQUEST	XQUERY import module namespace funcsPlaylist = 'com.funcsPlaylist.my.index'; funcsPlaylist:info-musica('1iTeTbQNs60GuQ7RHRs3fB')	2.15 ms
+18:05:33.353	127.0.0.1:48062	admin	OK	Query executed in 39.08 ms.	40.48 ms
+18:05:33.355	127.0.0.1:48062	admin	REQUEST	XQUERY import module namespace funcsPlaylist = 'com.funcsPlaylist.my.index'; funcsPlaylist:info-musica('59RzIGDFjculZ2ek1yCzj5')	0.75 ms
+18:05:33.381	127.0.0.1:48062	admin	OK	Query executed in 25.33 ms.	26.26 ms
+18:05:57.519	127.0.0.1:48080	admin	REQUEST	XQUERY import module namespace funcsPlaylist = 'com.funcsPlaylist.my.index'; funcsPlaylist:info-musica('1iTeTbQNs60GuQ7RHRs3fB')	0.57 ms
+18:05:57.595	127.0.0.1:48080	admin	OK	Query executed in 72.8 ms.	75.28 ms
+18:05:57.600	127.0.0.1:48080	admin	REQUEST	XQUERY import module namespace funcsPlaylist = 'com.funcsPlaylist.my.index'; funcsPlaylist:info-musica('59RzIGDFjculZ2ek1yCzj5')	0.5 ms
+18:05:57.672	127.0.0.1:48080	admin	OK	Query executed in 72.15 ms.	72.85 ms
+18:05:57.990	127.0.0.1:48080	admin	REQUEST	XQUERY import module namespace funcsPlaylist = 'com.funcsPlaylist.my.index'; funcsPlaylist:musicas()	0.59 ms
+18:05:58.088	127.0.0.1:48080	admin	OK	Query executed in 97.06 ms.	97.95 ms
+18:06:58.134	127.0.0.1:48080	admin	REQUEST	XQUERY import module namespace funcsPlaylist = 'com.funcsPlaylist.my.index'; funcsPlaylist:info-musica('1iTeTbQNs60GuQ7RHRs3fB')	1.24 ms
+18:06:58.184	127.0.0.1:48080	admin	OK	Query executed in 48.29 ms.	50.08 ms
+18:06:58.186	127.0.0.1:48080	admin	REQUEST	XQUERY import module namespace funcsPlaylist = 'com.funcsPlaylist.my.index'; funcsPlaylist:info-musica('59RzIGDFjculZ2ek1yCzj5')	0.53 ms
+18:06:58.212	127.0.0.1:48080	admin	OK	Query executed in 24.98 ms.	26.11 ms
+18:06:58.402	127.0.0.1:48080	admin	REQUEST	XQUERY import module namespace funcsPlaylist = 'com.funcsPlaylist.my.index'; funcsPlaylist:musicas()	2.11 ms
+18:06:58.487	127.0.0.1:48080	admin	OK	Query executed in 83.33 ms.	84.73 ms
+18:08:06.219	127.0.0.1:48134	admin	REQUEST	XQUERY import module namespace funcsPlaylist = 'com.funcsPlaylist.my.index'; funcsPlaylist:info-musica('1iTeTbQNs60GuQ7RHRs3fB')	0.93 ms
+18:08:06.279	127.0.0.1:48134	admin	OK	Query executed in 59.57 ms.	60.59 ms
+18:08:06.281	127.0.0.1:48134	admin	REQUEST	XQUERY import module namespace funcsPlaylist = 'com.funcsPlaylist.my.index'; funcsPlaylist:info-musica('59RzIGDFjculZ2ek1yCzj5')	1.23 ms
+18:08:06.299	127.0.0.1:48134	admin	OK	Query executed in 16.63 ms.	17.35 ms
+18:08:06.731	127.0.0.1:48134	admin	REQUEST	XQUERY import module namespace funcsPlaylist = 'com.funcsPlaylist.my.index'; funcsPlaylist:musicas()	0.95 ms
+18:08:06.796	127.0.0.1:48134	admin	OK	Query executed in 64.63 ms.	65.54 ms
+18:09:20.352	127.0.0.1:48172	admin	REQUEST	XQUERY import module namespace funcsPlaylist = 'com.funcsPlaylist.my.index'; funcsPlaylist:info-musica('1iTeTbQNs60GuQ7RHRs3fB')	0.54 ms
+18:09:20.377	127.0.0.1:48172	admin	OK	Query executed in 24.87 ms.	25.55 ms
+18:09:20.379	127.0.0.1:48172	admin	REQUEST	XQUERY import module namespace funcsPlaylist = 'com.funcsPlaylist.my.index'; funcsPlaylist:info-musica('59RzIGDFjculZ2ek1yCzj5')	0.8 ms
+18:09:20.412	127.0.0.1:48172	admin	OK	Query executed in 31.8 ms.	32.55 ms
+18:09:20.607	127.0.0.1:48172	admin	REQUEST	XQUERY import module namespace funcsPlaylist = 'com.funcsPlaylist.my.index'; funcsPlaylist:musicas()	1.08 ms
+18:09:20.666	127.0.0.1:48172	admin	OK	Query executed in 58.43 ms.	59.87 ms
+18:11:21.711	127.0.0.1:48272	admin	REQUEST	XQUERY import module namespace funcsPlaylist = 'com.funcsPlaylist.my.index'; funcsPlaylist:info-musica('1iTeTbQNs60GuQ7RHRs3fB')	1.78 ms
+18:11:21.737	127.0.0.1:48272	admin	OK	Query executed in 25.12 ms.	26.13 ms
+18:11:21.738	127.0.0.1:48272	admin	REQUEST	XQUERY import module namespace funcsPlaylist = 'com.funcsPlaylist.my.index'; funcsPlaylist:info-musica('59RzIGDFjculZ2ek1yCzj5')	0.47 ms
+18:11:21.750	127.0.0.1:48272	admin	OK	Query executed in 11.64 ms.	12.16 ms
+18:11:22.054	127.0.0.1:48272	admin	REQUEST	XQUERY import module namespace funcsPlaylist = 'com.funcsPlaylist.my.index'; funcsPlaylist:musicas()	0.93 ms
+18:11:22.129	127.0.0.1:48272	admin	OK	Query executed in 73.41 ms.	74.58 ms
+18:12:15.648	127.0.0.1:48306	admin	REQUEST	XQUERY import module namespace funcsPlaylist = 'com.funcsPlaylist.my.index'; funcsPlaylist:info-musica('1iTeTbQNs60GuQ7RHRs3fB')	2.57 ms
+18:12:15.666	127.0.0.1:48306	admin	OK	Query executed in 17.35 ms.	18.04 ms
+18:12:15.667	127.0.0.1:48306	admin	REQUEST	XQUERY import module namespace funcsPlaylist = 'com.funcsPlaylist.my.index'; funcsPlaylist:info-musica('59RzIGDFjculZ2ek1yCzj5')	0.51 ms
+18:12:15.688	127.0.0.1:48306	admin	OK	Query executed in 19.45 ms.	20.3 ms
+18:12:41.521	127.0.0.1:48320	admin	REQUEST	XQUERY import module namespace funcsPlaylist = 'com.funcsPlaylist.my.index'; funcsPlaylist:info-musica('1iTeTbQNs60GuQ7RHRs3fB')	0.81 ms
+18:12:41.546	127.0.0.1:48320	admin	OK	Query executed in 23.92 ms.	24.91 ms
+18:12:41.547	127.0.0.1:48320	admin	REQUEST	XQUERY import module namespace funcsPlaylist = 'com.funcsPlaylist.my.index'; funcsPlaylist:info-musica('59RzIGDFjculZ2ek1yCzj5')	0.77 ms
+18:12:41.567	127.0.0.1:48320	admin	OK	Query executed in 18.79 ms.	19.54 ms
+18:12:41.768	127.0.0.1:48320	admin	REQUEST	XQUERY import module namespace funcsPlaylist = 'com.funcsPlaylist.my.index'; funcsPlaylist:musicas()	0.43 ms
+18:12:41.820	127.0.0.1:48320	admin	OK	Query executed in 51.4 ms.	52.08 ms
+18:25:13.564	127.0.0.1:48320	admin	REQUEST	XQUERY import module namespace funcsPlaylist = 'com.funcsPlaylist.my.index'; funcsPlaylist:info-musica('1iTeTbQNs60GuQ7RHRs3fB')	0.39 ms
+18:25:13.580	127.0.0.1:48320	admin	OK	Query executed in 13.16 ms.	16.04 ms
+18:25:13.581	127.0.0.1:48320	admin	REQUEST	XQUERY import module namespace funcsPlaylist = 'com.funcsPlaylist.my.index'; funcsPlaylist:info-musica('59RzIGDFjculZ2ek1yCzj5')	0.42 ms
+18:25:13.592	127.0.0.1:48320	admin	OK	Query executed in 11.27 ms.	11.72 ms
+18:25:13.794	127.0.0.1:48320	admin	REQUEST	XQUERY import module namespace funcsPlaylist = 'com.funcsPlaylist.my.index'; funcsPlaylist:musicas()	0.87 ms
+18:25:13.867	127.0.0.1:48320	admin	OK	Query executed in 71.97 ms.	72.92 ms
+18:27:25.576	SERVER	admin	OK	Server was stopped (port: 1984).
+18:28:00.246	SERVER	admin	OK	Server was started (port: 1984).
+18:28:26.070	127.0.0.1:48690	admin	REQUEST	XQUERY import module namespace funcsPlaylist = 'com.funcsPlaylist.my.index'; funcsPlaylist:info-musica('1iTeTbQNs60GuQ7RHRs3fB')	59.47 ms
+18:28:27.886	127.0.0.1:48690	admin	OK	Query executed in 1810.55 ms.	1815.66 ms
+18:28:27.892	127.0.0.1:48690	admin	REQUEST	XQUERY import module namespace funcsPlaylist = 'com.funcsPlaylist.my.index'; funcsPlaylist:info-musica('59RzIGDFjculZ2ek1yCzj5')	2.26 ms
+18:28:28.077	127.0.0.1:48690	admin	OK	Query executed in 183.23 ms.	184.18 ms
+18:28:28.331	127.0.0.1:48690	admin	REQUEST	XQUERY import module namespace funcsPlaylist = 'com.funcsPlaylist.my.index'; funcsPlaylist:musicas()	0.58 ms
+18:28:28.710	127.0.0.1:48690	admin	OK	Query executed in 377.91 ms.	378.63 ms
+18:30:00.788	SERVER	admin	OK	Server was stopped (port: 1984).
