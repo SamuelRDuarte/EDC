@@ -1,0 +1,93 @@
+
+#ex2
+Prefix mov: <http://movies.org/pred/>
+
+select ?fname
+where{
+	?real mov:name "Ridley Scott" .
+	?film mov:directed_by ?real .
+	?film mov:name ?fname .
+}
+
+
+#ex3
+
+Prefix mov: <http://movies.org/pred/>
+
+select ?aname
+where{
+	?film mov:name "The Legend of Zorro" .
+	?film mov:starring ?pessoa .
+    ?pessoa mov:name ?aname .
+}
+
+
+#ex4
+
+PREFIX mov:<http://movies.org/pred/>
+DESCRIBE ?film
+WHERE{
+    ?film mov:name "Blade Runner" .
+    #?film mov:starring ?actor
+}
+
+#ex4_minhaTentativa
+
+PREFIX mov:<http://movies.org/pred/>
+select ?film ?o ?film ?nome
+WHERE{
+    ?s mov:name "Blade Runner" .
+    ?s ?o ?p .
+    ?s mov:name ?film .
+    ?p mov:name ?nome .
+}
+
+#ex4_stor
+PREFIX mov:<http://movies.org/pred/>
+select ?o ?onome
+WHERE{
+    {
+    	select ?s ?o ?p 
+        where{
+        	 ?s mov:name "Blade Runner" .
+        	 ?s ?p ?o .
+    	}
+    }
+    ?o mov:name ?onome .
+}
+
+
+#ex5_insert
+
+PREFIX rdf:<http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX mov:<http://movies.org/pred/>
+PREFIX movt:<http://movies.org/types/>
+
+
+Insert { ?s rdf:type movt:Movie}
+where{
+    ?s mov:directed_by ?d .
+}
+
+#ex6
+
+PREFIX rdf:<http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX mov:<http://movies.org/pred/>
+PREFIX movt:<http://movies.org/types/>
+
+construct{
+    ?d rdf:type movt:Director .
+    ?a rdf:type movt:Actor .
+}
+where
+{
+    {
+        ?f1 mov:directed_by ?d .
+    }
+    Union
+    {
+       ?f1 mov:starring ?a . 
+    }
+}
+
+
