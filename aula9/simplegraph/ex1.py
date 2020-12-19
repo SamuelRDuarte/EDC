@@ -8,6 +8,9 @@ def menu():
     print("3. Realizador de um filme")
     print("4. Atores de um filme")
     print("5. Filmes de um realizador")
+    print("6. Filmes de um ator")
+    print("7. Lista de atores orientados por um dado realizador e em que filmes")
+    print("8. Lista de realizadores que já orientaram um dado ator em que filmes")
     print("---------------------")
     print("0. Sair")
     print("---------------------")
@@ -55,6 +58,49 @@ def getfilmsbyrealizador():
         res.add(f["nome"])
     print(sorted(res))
 
+def getfilmsbyactor():
+    rez = input("Actor: ")
+    lista = _graph.query([("?idRez", "name", rez),
+                          ("?film", "starring", "?idRez"),
+                          ("?film", "name", "?nome")])
+
+    res = set()
+    for f in lista:
+        res.add(f["nome"])
+    print(sorted(res))
+
+def getactorsAndFilmsbyrealizador():
+    rez = input("Realizador: ")
+    lista = _graph.query([("?idRez", "name", rez),
+                          ("?film", "directed_by", "?idRez"),
+                          ("?film", "starring", "?actor"),
+                          ("?actor", "name", "?Aname"),
+                          ("?film", "name", "?Fnome")
+                          ])
+    res = dict()
+    for f in lista:
+        if f["Aname"] in res.keys():
+            res[f["Aname"]].append(f["Fnome"])
+        else:
+            res[f["Aname"]] = [f["Fnome"]]
+    print(res)
+
+def getRealizadorAndFilmsbyActor():
+    act = input("Actor: ")
+    lista = _graph.query([("?idAct", "name", act),
+                          ("?film", "starring", "?idAct"),
+                          ("?film", "directed_by", "?rez"),
+                          ("?rez", "name", "?Rname"),
+                          ("?film", "name", "?Fnome")
+                          ])
+    res = dict()
+    for f in lista:
+        if f["Rname"] in res.keys():
+            res[f["Rname"]].append(f["Fnome"])
+        else:
+            res[f["Rname"]] = [f["Fnome"]]
+    print(res)
+
 def loadgraph():
     print("Carregar Grafo")
     _graph2.load("movies.csv") #ficheiro mais pequeno para a fazer pesquisas simples
@@ -64,7 +110,7 @@ def run(op):
     _funcs[op-1]()
 
 if __name__ == "__main__":
-    _funcs = (listgraph,listfilms,getrealizador,getautores, getfilmsbyrealizador)
+    _funcs = (listgraph,listfilms,getrealizador,getautores, getfilmsbyrealizador,getfilmsbyactor,getactorsAndFilmsbyrealizador,getRealizadorAndFilmsbyActor)
     _graph2 = SimpleGraph()
     _graph = SimpleGraph()
     loadgraph()

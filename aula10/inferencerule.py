@@ -21,3 +21,11 @@ class EnemyRule(InferenceRule):
         return [partner_enemy]
     def _maketriples(self, person, enemy, rel, partner):
         return [(partner, 'enemy', enemy)]
+
+class KnownRule(InferenceRule):
+    def getqueries(self):
+        lista = [('Winona Ryder', 'starred_in','?film'),
+                        ('?person', 'starred_in', '?film')]
+        return [lista]
+    def _maketriples(self, film, person):
+        return [('Winona Ryder', 'knows', person)]
